@@ -595,6 +595,12 @@ ul.list-dashed li::before { position: absolute; top: 1.4rem; left: 0; width: .5r
 
 .main-visual__inner { height: 98rem; background: url(../image/main/main-visual.jpg); }
 
+.main-middle { max-width: 140rem; margin: 0 auto; }
+
+.main-middle h1 { font-size: 4.6rem; font-weight: bold; }
+
+.main-middle h1 > * { font-size: 4.6rem; font-weight: bold; }
+
 .donation { position: absolute; bottom: 0; width: 100%; }
 
 .donation__inner { max-width: 140rem; margin: 0 auto; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
