@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" charset="UTF-8" name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>[KHA]대한병원협회</title>
+
+
+	<link rel="shortcut icon" href="../../resource/image/common/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../resource/image/common/favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="../../resource/css/animate.css">
+	<link rel="stylesheet" href="../../resource/css/jquery.fullpage.css">
+	<link rel="stylesheet" href="../../resource/css/jquery-ui.css">
+	<link rel="stylesheet" href="../../resource/css/animate.css">
+	<link rel="stylesheet" href="../../resource/css/swiper.min.css">
+	<link rel="stylesheet" href="../../resource/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="../../resource/css/reset.css">
+	<link rel="stylesheet" href="../../resource/css/font.css">
+	<link rel="stylesheet" href="../../resource/css/main.css">
+	<link rel="stylesheet" href="../../resource/css/sub.css">
+	
+
+	<script src="../../resource/js/jquery-1.12.4.min.js"></script>
+	<script src="../../resource/js/jquery.fullpage.min.js"></script>
+	<script src="../../resource/js/jquery-ui.min.js"></script>
+	<script src="../../resource/js/bootstrap.min.js"></script>
+	<script src="../../resource/js/swiper.min.js"></script>
+	<script src="../../resource/js/common.js"></script>
+	<script src="../../resource/js/main.js"></script>
+	<script src="../../resource/js/sub.js"></script>
+
+</head>
+
+
+<body>
+	<div class="wrap">
+		<div id="skipNavigation" title="스킵내비게이션">
+			<a href="#gnb" class="">주메뉴 바로가기 </a>
+			<a href="#contents" class=""> 본문 내용 바로가기 </a>
+		</div>
+		<!-- start : header -->
+		<header>
+			<div class="header">
+				<div class="header__inner d-flex align-items-center justify-content-between">
+
+					<div class="logo-wrap">
+						<a href="javascript:void(0)">
+							<!-- <img src="./resource/image/common/logo.png" alt=""> -->
+						</a>
+					</div>
+
+					<div class="gnb-box pc">
+						<h2 class="hidden">주메뉴</h2>
+						<ul class="gnb d-flex justify-content-between">
+							<li><a href="javascript:void(0)">소개</a>
+								<ul>
+									<li><a href="javascript:void(0)">수련환경평가본부</a></li>
+									<li><a href="javascript:void(0)">직원현황</a></li>
+									<li><a href="javascript:void(0)">찾아오시는 길</a></li>
+								</ul>
+							</li>
+							<li><a href="../02_notice/list.html">알림</a>
+								<ul>
+									<li><a href="../02_notice/list.html">공지사항</a></li>
+									<li><a href="javascript:void(0)">채용</a></li>
+									<li><a href="javascript:void(0)">입찰</a></li>
+								</ul>
+							</li>
+							<li><a href="../03_data/lawInfo.html">자료실</a>
+								<ul>
+									<li><a href="../03_data/lawInfo.html">법령정보</a></li>
+									<li><a href="javascript:void(0)">지침</a></li>
+									<li><a href="../03_data/list.html">수련병원현황</a></li>
+									<li><a href="../03_data/resultList.html">평가대상기 관현황</a></li>
+									<li><a href="javascript:void(0)">수련환경평가결과</a></li>
+								</ul>
+							</li>
+							<li><a href="../01_work/workCouncil.html">주요업무</a>
+								<ul>
+									<li><a href="../01_work/workCouncil.html">수련환경평가위원회 운영지원</a></li>
+									<li><a href="../01_work/workAegmt.html">수련환경평가 수행</a></li>
+									<li><a href="../01_work/workTraining.html">전공의 수련상황 관리</a></li>
+									<li><a href="../01_work/workCareer.html">전공의 전형 관리</a></li>
+									<li><a href="../01_work/workHunet.html">지도전문의 지정 현황 관리 및 <br>	교육과정 운영	</a></li>
+									<li><a href="../01_work/workCommon.html">전공의 공통역량 교육과정 제공</a></li>
+								</ul>
+							</li>
+							<!-- <li><a href="javascript:void(0)">이용안내</a>
+								<ul>
+									<li><a href="javascript:void(0)">홈페이지 이용안내</a></li>
+									<li><a href="javascript:void(0)">사이트 맵</a></li>
+								</ul>
+							</li> -->
+							<li><a href="../06_complain/complainInfo.html">민원신청</a>
+								<ul>
+									<li><a href="../06_complain/complainInfo.html">민원신청</a></li>
+									<li><a href="javascript:void(0)">민원조회</a></li>
+								</ul>
+							</li>
+						</ul>
+						<div class="side-banner">
+
+						</div>
+						<a href="javascript:void(0)" class="gnb-close"><i class="el-icon-close"></i></a>
+					</div>
+
+					<div class="rela-site ">
+						<ul>
+							<li class="mohw"><a href="javascript:void(0)"></a></li>
+							<li class="kha"><a href="javascript:void(0)"></a></li>
+							
+						</ul>
+					</div>
+
+					<div class="user-area">
+						<div class="d-flex align-items-center">
+							<!-- <div><button type="button" class="button-alarm" onclick="location.href='./sub/06_complain/complainInfo.html'"></button></div> -->
+							<div>
+								<!-- 전달사항 :: 로그아웃시 class="button-logout" 으로 바꿔주세요 -->
+								<button type="button" class="button-login" onclick="location.href='./sub/00_member/login.html'"></button>
+							</div>
+							<div>
+								<button type="button" class="button-sitemap pc" onclick="location.href='./sub/05_guide/sitemap.html'"></button>
+								<button type="button" class="button-sitemap mobile"></button>
+								<!-- 사이트맵 모바일 -->
+								<div class="gnb-box mobile">
+									<div class="gnb-box__bg"></div>
+									<div class="gnb-box__inner">
+										<div class="user-area">
+											<div class="d-flex align-items-center m-0">
+												<div class="div-alarm">
+													<button type="button" class="button-alarm"></button>
+												</div>
+												<div class="div-login">
+													<!-- 전달사항 :: 로그아웃시 class="button-logout" 으로 바꿔주세요 -->
+													<button type="button" class="button-login"></button>
+												</div>
+												<div class="ml-auto mr-0 div-close">
+													<button type="button" class="button-close"></button>
+												</div>
+											</div>
+										</div>
+										<div class="y-scroll p-0">
+											<ul class="gnb d-flex">
+												<li><a href="javascript:void(0)">소개<i class="plus"></i></a>
+													<ul>
+														<li><a href="javascript:void(0)">공지사항</a></li>
+														<li><a href="javascript:void(0)">문의사항</a></li>
+														<li><a href="javascript:void(0)">행사</a></li>
+														<li><a href="javascript:void(0)">견학신고</a></li>
+														<li><a href="javascript:void(0)">주변관광</a></li>
+													</ul>
+												</li>
+												
+												<li><a href="javascript:void(0)">알림<i class="plus"></i></a>
+													<ul>
+														<li><a href="javascript:void(0)">교육 프로그래</a></li>
+														<li><a href="javascript:void(0)">도포 투어 프로그램</a></li>
+														<li><a href="javascript:void(0)">공연 프로그램</a></li>
+													</ul>
+												</li>
+												<li><a href="javascript:void(0)">자료실<i class="plus"></i></a>
+													<ul>
+														<li><a href="javascript:void(0)">공지사항</a></li>
+														<li><a href="javascript:void(0)">문의사항</a></li>
+														<li><a href="javascript:void(0)">행사</a></li>
+														<li><a href="javascript:void(0)">견학신고</a></li>
+														<li><a href="javascript:void(0)">주변관광</a></li>
+													</ul>
+												</li>
+												<li><a href="javascript:void(0)">주요업무<i class="plus"></i></a>
+													<ul>
+														<li><a href="javascript:void(0)">수련환경평가위원회 운영지원</a></li>
+														<li><a href="javascript:void(0)">수련환경평가 운영 지원 및 <br> 수련병원 및 수련전문과목 지정</a></li>
+														<li><a href="javascript:void(0)">수련상황관리</a></li>
+														<li><a href="javascript:void(0)">정공의 전형관리</a></li>
+														<li><a href="javascript:void(0)">지도전문의 지정현황관리</a></li>
+														<li><a href="javascript:void(0)">전공의 민원접수</a></li>
+														<li><a href="javascript:void(0)">전공의 공통역량교육</a></li>
+														<li><a href="javascript:void(0)">외과·흉부외과 지원사업</a></li>
+														<li><a href="javascript:void(0)">전공의 단기연수 지원사업</a></li>
+													</ul>
+												</li>
+												
+												<li><a href="javascript:void(0)">민원신청<i class="plus"></i></a>
+													<ul>
+														<li><a href="../06_complain/complainInfo.html">민원신청</a></li>
+														<li><a href="javascript:void(0)">민원조회</a></li>
+													</ul>
+												</li>
+											</ul>
+											<div class="rela-site d-flex align-items-center justify-content-center">
+												<button type="button">보건복지부</button>
+												<button type="button">대한병원협회</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- //사이트맵 모바일 -->
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</header>
+		<!-- end : header -->
+
+		<!-- start : contents -->
+		<div class="contents">
+            <div class="contents__inner">
+                <div class="sub-visual minwon">
+					<h1 class="font_j">민원신청</h1>
+                    <div class="breadcrumb">
+                        <div class="breadcrumb__inner d-flex align-items-center justify-content-between">
+                            <ul class="d-flex">
+                                <li class="home"><a href="javascript:void(0)"><i></i></a></li>
+                                <li class="last">
+									<a href="javascript:void(0)">민원신청 <i></i></a>
+									<ul>
+										<li><a href="javascript:void(0)"></a></li>
+									</ul>
+								</li>
+                            </ul>
+							<p class="breadcrumb-txt">HOME - <span>민원신청</span> </p>
+                        </div>
+                    </div>
+                </div>
+				<div class="contents-core">
+					<div class="contents-core__inner">
+						<h2 class="sub-title">민원신청</h2>
+						
+                        <div class="complainStep">
+                            <div class="complainStep__inner">
+                                <div class="progress">
+                                    <div class="progress__inner">
+                                        <ul class="d-flex">
+                                            <li class="active">
+                                                <p class="num">step.01</p>
+                                                <div class="img-wrap">
+                                                    <img src="../../resource/image/sub/icon-complainStep01.png" alt="">
+                                                </div>
+                                                <p class="txt">규정 안내 및 개인정보동의</p>
+                                            </li>
+                                            <li class="dot"><img src="../../resource/image/sub/icon-complainStep__dot.png" alt=""></li>
+                                            <li>
+                                                <p class="num">step.02</p>
+                                                <div class="img-wrap">
+                                                    <img src="../../resource/image/sub/icon-complainStep02.png" alt="">
+                                                </div>
+                                                <p class="txt">신청서 작성</p>
+                                            </li>
+                                            <li class="dot"><img src="../../resource/image/sub/icon-complainStep__dot.png" alt=""></li>
+                                            <li>
+                                                <p class="num">step.03</p>
+                                                <div class="img-wrap">
+                                                    <img src="../../resource/image/sub/icon-complainStep03.png" alt="">
+                                                </div>
+                                                <p class="txt">접수완료</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt_50">
+                                <div class="h4-wrap">전공의 수련 관련 민원 조사 및 처리 규정</div>
+                                <div>
+                                    <div class="agree-box">
+                                        <div class="agree-box__inner">
+                                            제1조(목적) 이 규정은 전공의 수련관련 민원 처리에 필요한 사항을 규정하여 민원을 적정하게 처리함을 목적으로 한다. <br>
+                                            제2조(적용범위) 이 규정은 수련환경평가위원회 조사위원회(이하 ‘조사위원회’)를 통하여 접수되는 전공의 수련관련 민원을 처리하는 경우에 해당하며 세부 사항은 다음 각 호와 같이 적용한다.<br><br>
+                                            1. 직접 경험자가 아닌 제3자(보호자 등)에 의한 민원인 경우 익명 민원에 준하여 처리하되, 직접 경험자가 접수하도록 안내 한다. <br>
+                                            단, 다음 각 목의 사항에 모두 해당하는 단체가 정관, 조직 및 예산 등 증빙자료를  제출하고 별표의 ‘단체민원신청 운영지침’에 따라 신청한 민원의 경우는 예외로 한다.<br><br>
+                                            가. 단체의 명칭, 사무소 또는 사업소의 소재지 및 대표자 성명이 명확한 경우
+                                            나. 단체의 주된 목적과 사업이 전공의 수련제도와 직접적인 관련이 있고 정관의 설립 목적 및 사업에 전공의 수련제도 사항이 명시된 경우<br><br>
+                                            2. 수련 중도포기(사직 등)의 사유에 의해 전공의 신분이 아닌 자에 의한 민원이라 하더라도 전공의 수련환경 관련 민원으로 처리. 다만, 수련환경 관련 민원임에도 불구하고 사건 발생 후 3년이 경과된 자에 의한 민원은 각하 처리 한다.
+                                        </div>
+                                    </div>
+                                    <div class="form-check check-all">
+                                        <input type="checkbox" title="" name="" id="check2" value="">
+                                        <label for="check2"><p>동의합니다.</p></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt_50">
+                                <div class="h4-wrap">개인정보 수집 및 이용안내</div>
+                                <div>
+                                    <div class="agree-box">
+                                        <div class="agree-box__inner">
+                                            대한병원협회가 취급하는 모든 개인정보는 개인정보 보호법 등 관련 법령상의 개인정보 규정을 준수하여 수집ㆍ보유ㆍ처리되고 있습니다. 대한병원협회는 개인정보보호법에 따라 이용자의 개인정보 보호 및 권익을 보호하고 개인정보와 관련한 이용자의 고충을 원활하게 처리할 수 있도록 다음과 같은 처리 방침을 두고 있습니다. 특히, 개인정보를 처리하는 대한병원협회 소관 홈페이지의 경우 법 제30조 제1항 및 법 시행령 제31조제1항의 규정에 의하여 해당 홈페이지에 별도의 '개인정보 처리방침'을 정하여 운영하고 있습니다. 대한병원협회는 '개인정보 처리방침'을 변경하는 경우에는 시행의 시기, 변경된 내용을 정보주체가 쉽게 확인할 수 있도록 변경 전ㆍ후를 비교하여 공개하도록 할 예정입니다. <br><br>
+
+                                            1. 정보주체로부터 별도의 동의를 받는 경우<br>
+                                            2. 법률에 특별한 규정이 있는 경우<br>
+                                            3. 정보주체 또는 법정대리인이 의사표시를 할 수 없는 상태에 있거나 주소불명 등으로 사전 동의를 받을 수 없는 경우로서 명백히 정보주체 또는 제3자의 급박한 생명, 신체, 재산의 이익을 위하여 필요하다고 인정되는 
+
+                                        </div>
+                                    </div>
+                                    <div class="form-check check-all">
+                                        <input type="checkbox" title="" name="" id="check1" value="">
+                                        <label for="check1"><p>동의합니다.</p></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt_50">
+                                <div class="table ver">
+                                    <div class="table__inner text-center">
+                                        <table>
+                                            <colgroup>
+                                                <col style="width:290px">
+                                                <col style="width:auto">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>수련병원</th>
+                                                    <td>
+                                                        <div class="form-group d-flex">
+                                                            <label for=""></label>
+                                                            <input type="text" name="" value="" id="" class="form-input input-m" placeholder="">
+                                                            <button type="button" class="button-sky" data-toggle="modal" data-target="#modal">병원검색</button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>수련과목</th>
+                                                    <td>
+                                                        <div class="d-flex">
+                                                            <div class="checks d-flex align-items-center">
+                                                                <input type="radio" id="intern" name="intern" checked=""><label for="intern">인턴</label>
+                                                                <input type="radio" id="res" name="intern"><label for="res">레지던트</label>
+                                                            </div>
+
+															<!-- 과목명과 연차는 레지던트 선택시 활성화 -->
+                                                            <div class="form-select w-200 ml_30 displayToggle" style="display: none;">
+                                                                <select class="select ">
+                                                                    <option value="">과목명</option>
+                                                                </select>
+                                                                <select class="select">
+                                                                    <option value="">연차</option>
+                                                                </select>
+                                                            </div>
+															<!-- //과목명과 연차는 레지던트 선택시 활성화 -->
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>민원항목</th>
+                                                    <td>
+                                                        <div class="form-check d-flex align-items-center">
+                                                            <input type="checkbox" title="" name="" id="check1" value="">
+                                                            <label for="check1"><p>수련규칙위반</p></label>
+                                                            <input type="checkbox" title="" name="" id="check1" value="">
+                                                            <label for="check1"><p>폭언</p></label>
+                                                            <input type="checkbox" title="" name="" id="check1" value="">
+                                                            <label for="check1"><p>폭행</p></label>
+                                                            <input type="checkbox" title="" name="" id="check1" value="">
+                                                            <label for="check1"><p>성희롱</p></label>
+                                                            <input type="checkbox" title="" name="" id="check1" value="">
+                                                            <div class="input-text">
+																<label for="check1" class="mr_10"><p>기타</p></label>
+																<div class="form-input__wrap d-flex">
+																	<label for=""></label>
+																	<input type="text" name="" value="" id="" class="form-input" placeholder="">
+																</div>
+															</div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="button-wrap mt_50 w-125">
+                                <button type="button" class="button-border">취소</button>
+                                <button type="button" class="button-blue">다음</button>
+                            </div>
+                        </div>
+
+
+						<!-- 병원 검색 모달 -->
+						<div class="modal fade" id="modal">
+							<div class="modal-dialog modal-dialog-centered pop" role="document">
+								<div class="modal-content">
+									<div class="modal-header pb-0">
+										<button type="button" class="button-close" data-dismiss="modal"></button>
+									</div>
+									<div class="modal-body m-0 ">
+										<p class="modal-intitle text-center">병원검색</p>
+										<div class="search-code mt_40">
+											<div class="search-code__inner">
+												<div class="d-flex search-code__box">
+													<div class="form-group d-flex">
+														<label for=""></label>
+														<input type="text" name="" value="" id="" class="form-input" placeholder="병원명을 입력해주세요" />
+													</div>
+													<div class="button-wrap">
+														<button type="button" class="button-search"><i></i></button>
+													</div>
+												</div>
+
+												<div class="search-code__table mt_40">
+													<div class="table ver">
+														<div class="table__inner text-center">
+															<table class="">
+																<colgroup>
+																	<col style="width:33.3%">
+																	<col style="width:33.3%">
+																	<col style="width:33.3%">
+																</colgroup>
+																<thead>
+																	<tr>
+																		<th scope="col">병원명</th>
+																		<th scope="col">시/도 군/구</th>
+																		<th scope="col">병원코드</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td>가천의과대학교</td>
+																		<td>인천광역시 연수구</td>
+																		<td>025863</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+			
+								</div>
+							</div>
+						</div>
+						<!-- //병원 검색 모달 -->
+                        
+					</div>
+					
+					
+				</div>
+            </div>
+        </div>
+
+		<footer>
+			<div class="footer">
+				<div class="footer__inner">
+					<div class="footer-banner">
+						<div class="footer-banner__inner">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a href="javascript:void(0)">
+											<img src="../../resource/image/common/img-footer__banner01.png" alt="">
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="javascript:void(0)">
+											<img src="../../resource/image/common/img-footer__banner02.png" alt="">
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="javascript:void(0)">
+											<img src="../../resource/image/common/img-footer__banner03.png" alt="">
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="javascript:void(0)">
+											<img src="../../resource/image/common/img-footer__banner04.png" alt="">
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="javascript:void(0)">
+											<img src="../../resource/image/common/img-footer__banner05.png" alt="">
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="javascript:void(0)">
+											<img src="../../resource/image/common/img-footer__banner06.png" alt="">
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="javascript:void(0)">
+											<img src="../../resource/image/common/img-footer__banner07.png" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-arrow d-flex align-items-center justify-content-between">
+								<div class="swiper-button-next footer"></div>
+								  <div class="swiper-button-prev footer"></div>
+							</div>	
+						</div>
+						
+					</div>
+					<div class="footer-info">
+						<div class="footer-info__inner">
+							<div class="d-flex justify-content-between">
+								<div>
+									<ul class="d-flex">
+										<li><a href="javascript:void(0)" class="color-black">개인정보처리방침</a></li>
+										<li><a href="javascript:void(0)">대한병원협회</a></li>
+										<li><a href="javascript:void(0)">병원신문</a></li>
+										<li><a href="javascript:void(0)">병원검색안내시스템</a></li>
+										<li><a href="javascript:void(0)">한국병원경영연구원</a></li>
+									</ul>
+									<address>
+										[04165] 서울 마포구 마포대로 15(마포동 35-1) 현대빌딩 13~14층 대한병원협회     Tel:02-705-9200  Fax:02-705-9229
+									</address>
+									<p class="copyright">©Korean Hospital Association. All Rights Reserved.</p>
+								</div>
+								<div class="site d-flex">
+									<div class="lf">
+										<!-- <label for="department_link" id="sidoHpLabel">시도병원회 리스트</label> -->
+										<select name="sidoHp" id="department_link" onchange="window.open(value,'_blank');">
+											<option value="">시도병원회 리스트</option>
+											<option value="http://sha.or.kr/main/main.php">서울</option>
+											<option value="https://busan.kha.or.kr">부산</option>
+											<option value="https://daegu.kha.or.kr">대구/경북</option>
+											<option value="https://incheon.kha.or.kr">인천</option>
+											<option value="https://gwangju.kha.or.kr">광주/전남</option>
+											<option value="https://daejeon.kha.or.kr">대전/세종/충남</option>
+											<option value="https://koungki.kha.or.kr">경기</option>
+											<option value="https://gangwon.kha.or.kr">강원</option>
+											<option value="https://chungbuk.kha.or.kr">충북</option>
+											<option value="https://jeonbuk.kha.or.kr">전북</option>
+											<option value="https://www.kha.or.kr/sido/SIDO_GYEONGNAM">울산/경남</option>
+											<option value="https://jeju.kha.or.kr">제주</option>
+										</select>
+									</div>
+									<div class="lf">
+										<!-- <label for="department_link" id="familySiteLabel" >관련기관 홈페이지</label> -->
+										<select name="familySite" id="department_link" onchange="window.open(value,'_blank');">
+										<option value="">관련기관 홈페이지</option>
+											<option value="http://www.mohw.go.kr">보건복지부</option>
+											<option value="http://www.moi.go.kr">행정자치부</option>
+											<option value="http://www.mfds.go.kr">식품의약품안전처</option>
+											<option value="http://www.nhis.or.kr">국민건강보험</option>
+											<option value="http://www.hira.or.kr">건강보험심사평가원</option>
+											<option value="http://www.nps.or.kr">국민연금</option>
+											<option value="http://www.kcomwel.or.kr">근로복지공단</option>
+											<option value="http://www.knia.or.kr">손해보험협회</option>
+											<option value="http://www.kma.org">대한의사협회</option>
+											<option value="http://www.akom.org">대한한의사협회</option>
+											<option value="http://www.kda.or.kr">대한치과의사협회</option>
+											<option value="http://www.ihf-fih.org">IHF</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+</body>
+<script>
+	//swiper slide
+	// var mainSwiper = new Swiper('.swiper-container.first', {
+	//     loop: true,
+	//     spaceBetween: 30,
+	//     effect: 'fade',
+	//     centeredSlides: true,
+	//     //        autoplay: {
+	//     //            delay: 2500,
+	//     //            disableOnInteraction: false,
+	//     //        },
+	//     speed: 3000,
+	//     pagination: {
+	//         el: ".swiper-pagination",
+	//       },
+
+	//     navigation: {
+	//         nextEl: '.mainslide .swiper-button-next',
+	//         prevEl: '.mainslide .swiper-button-prev',
+	//     },
+
+	// });
+	// var pagingSwiper = new Swiper(".swiper-container.first", {
+	//     pagination: {
+	//         el: ".swiper-pagination2",
+	//         type: "fraction",
+	//     },
+	// });
+
+	// mainSwiper.controller.control = pagingSwiper;
+</script>
+
+</html>

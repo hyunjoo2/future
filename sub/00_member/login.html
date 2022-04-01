@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" charset="UTF-8" name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>[KHA]대한병원협회</title>
+
+    <link rel="shortcut icon" href="../../resource/image/common/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../resource/image/common/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../../resource/css/animate.css">
+    <link rel="stylesheet" href="../../resource/css/jquery.fullpage.css">
+    <link rel="stylesheet" href="../../resource/css/animate.css">
+    <link rel="stylesheet" href="../../resource/css/swiper.min.css">
+    <link rel="stylesheet" href="../../resource/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../../resource/css/reset.css">
+    <link rel="stylesheet" href="../../resource/css/font.css">
+    <!-- <link rel="stylesheet" href="../../resource/css/common.css"> -->
+    <link rel="stylesheet" href="../../resource/css/main.css">
+    <link rel="stylesheet" href="../../resource/css/sub.css">
+    
+
+
+
+
+
+    <script src="../../resource/js/jquery-1.12.4.min.js"></script>
+    <script src="../../resource/js/jquery.fullpage.min.js"></script>
+    <script src="../../resource/js/bootstrap.min.js"></script>
+    <script src="../../resource/js/swiper.min.js"></script>
+    <script src="../../resource/js/common.js"></script>
+    <script src="../../resource/js/main.js"></script>
+    <script src="../../resource/js/sub.js"></script>
+
+</head>
+
+
+<body>
+    <div class="wrap">
+        <div id="skipNavigation" title="스킵내비게이션">
+            <a href="#gnb" class="">주메뉴 바로가기 </a>
+            <a href="#contents" class=""> 본문 내용 바로가기 </a>
+        </div>
+
+        <!-- header -->
+        <div class="modal-header">
+            <button type="button" class="button-close" data-dismiss="modal"></button>
+        </div>
+        
+        <!-- body -->
+        <div class="modal-body p-0">
+            <div class="login-wrap">
+                <div class="top">
+                    <h2 class="modal-title font-noto">로그인</h2>
+                    <p>대한병원협회 수련병원협회에오신걸 환영합니다.  <br>
+                        아이디와 비밀번호를 입력해주세요.</p>
+                </div>
+                <div class="bottom">
+                    <div class="login-box bgGray">  
+                        <div class="form-group">
+                            <p>아이디</p>
+                            <label for=""></label>
+                            <input type="text" class="form-input w-100" id="" placeholder="아이디를 입력해주세요" value="">
+                        </div>
+                        <div class="form-group mt_30">
+                            <p>비밀번호</p>
+                            <label for=""></label>
+                            <input type="text" class="form-input w-100" id="" placeholder="비밀번호를 입력해주세요" value="">
+                        </div>
+                    </div>
+                    <div class="button-wrap mt_30">
+                        <button type="button" class="button-login w-100">로그인</button>
+                    </div>
+                    <div class="hospital mt_30">
+                        <button type="button" data-toggle="modal" data-target="#modal"><i></i>병원코드조회</button>
+                    </div>
+
+                    <div class="modal fade" id="modal">
+                        <div class="modal-dialog modal-dialog-centered pop" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header pb-0">
+                                    <button type="button" class="button-close" data-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body m-0 ">
+                                    <p class="modal-intitle text-center">로그인 안내</p>
+                                    <div class="search-code mt_40">
+                                        <div class="search-code__inner">
+                                            <div class="d-flex search-code__box">
+                                                <div class="form-group d-flex">
+                                                    <label for=""></label>
+                                                    <input type="text" name="" value="" id="" class="form-input" placeholder="병원명을 입력해주세요" />
+                                                </div>
+                                                <div class="button-wrap">
+                                                    <button type="button" class="button-search"><i></i></button>
+                                                </div>
+                                            </div>
+
+                                            <div class="search-code__table mt_40">
+                                                <div class="table ver">
+                                                    <div class="table__inner text-center">
+                                                        <table class="">
+                                                            <colgroup>
+                                                                <col style="width:33.3%">
+                                                                <col style="width:33.3%">
+                                                                <col style="width:33.3%">
+                                                            </colgroup>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">병원명</th>
+                                                                    <th scope="col">시/도 군/구</th>
+                                                                    <th scope="col">병원코드</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>가천의과대학교</td>
+                                                                    <td>인천광역시 연수구</td>
+                                                                    <td>025863</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        
+        
+
+
+    </div>
+</body>
+<script>
+    //swiper slide
+    // var mainSwiper = new Swiper('.swiper-container.first', {
+    //     loop: true,
+    //     spaceBetween: 30,
+    //     effect: 'fade',
+    //     centeredSlides: true,
+    //     //        autoplay: {
+    //     //            delay: 2500,
+    //     //            disableOnInteraction: false,
+    //     //        },
+    //     speed: 3000,
+    //     pagination: {
+    //         el: ".swiper-pagination",
+    //       },
+
+    //     navigation: {
+    //         nextEl: '.mainslide .swiper-button-next',
+    //         prevEl: '.mainslide .swiper-button-prev',
+    //     },
+
+    // });
+    // var pagingSwiper = new Swiper(".swiper-container.first", {
+    //     pagination: {
+    //         el: ".swiper-pagination2",
+    //         type: "fraction",
+    //     },
+    // });
+
+    // mainSwiper.controller.control = pagingSwiper;
+</script>
+
+</html>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" charset="UTF-8" name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>[KHA]대한병원협회</title>
+
+	<link rel="shortcut icon" href="./resource/image/common/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./resource/image/common/favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="./resource/css/animate.css">
+	<link rel="stylesheet" href="./resource/css/jquery.fullpage.css">
+	<link rel="stylesheet" href="./resource/css/animate.css">
+	<link rel="stylesheet" href="./resource/css/swiper.min.css">
+	<link rel="stylesheet" href="./resource/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="./resource/css/reset.css">
+	<link rel="stylesheet" href="./resource/css/font.css">
+	<link rel="stylesheet" href="./resource/css/common.css">
+	<link rel="stylesheet" href="./resource/css/main.css">
+	<link rel="stylesheet" href="./resource/css/sub.css">
+	
+	
+
+
+
+
+	<script src="./resource/js/jquery-1.12.4.min.js"></script>
+	<script src="./resource/js/jquery.fullpage.min.js"></script>
+	<script src="./resource/js/bootstrap.min.js"></script>
+	<script src="./resource/js/swiper.min.js"></script>
+	<script src="./resource/js/common.js"></script>
+	<script src="./resource/js/main.js"></script>
+	<script src="./resource/js/sub.js"></script>
+
+    <style>
+
+		ol, ul {list-style: none;}
+		.inner {position: relative;max-width: 80%;margin: 0 auto;}
+        ul li{ font-size: 22px;}
+		.tab_link {overflow: hidden;margin-bottom:50px;}
+		.tab_link li.on, .tab_link_se a.on {background: #5c7013; color: #fff; border: 1px solid #5c7013;}
+		.tab_link li, .tab_link_se a {float: left; width: 20%;box-sizing: border-box; border: 1px solid #e1e2eb;text-align: center;cursor: pointer;line-height:50px;}
+		.tab_link li + li {margin-left:-1px;}
+		.tab_cont.on, .tab_cont_se.on, .tab_cont_th.on { display: block;}
+		.tab_cont, .tab_cont_se, .tab_cont_th {display: none;}
+
+		h3 {padding:40px 0 40px 0;text-align:center;font-size:40px;font-weight:bold;}
+		h4 {padding:20px 0 20px 0;text-align:left;font-size:25px;}
+		table {width:100%;margin-bottom:60px;}
+		table,th,td {padding:10px;border: 1px solid #dedede;border-collapse:collapse;font-weight:bold;}
+		tr {border-top:1px solid #111;}
+		th{font-size:18px !important; text-align:center}
+		td {text-align:center;vertical-align:middle;padding: 15px 0 !important;line-height:1.5rem; font-size:17px !important;}
+		td a {color: #333;text-decoration:none; font-weight:200; font-size:17px !important;}
+		td span {font-size:13px;}
+
+	</style>
+
+</head>
+
+<body>
+
+    <h3>대한병원협회</h3>
+
+    <div class="content" style="padding-top:0;">
+        <div class="inner" style="padding-top:0;">
+            <div id="item1" class="tab_cont on">
+                <p style="margin-bottom:20px;">
+                    <!-- <a href="https://app.zeplin.io/project/61b2b064f3a09e4b862fa05d" target="_blank">디자인[제플린]</a><br>  -->
+                    <ul>
+                        <li><a href="./guide.html" target="_blank" style="display: inline-block; margin-top: 5px;">[퍼블 가이드]</a> </li>
+                        <li style="margin-top: 10px;">작업 시 README.md 파일 참고 부탁드립니다~</li>
+                    </ul>
+                    
+                </p>
+                <table style="margin-top: 10px;">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">No</th>
+                            <th rowspan="2">Menu Division</th>
+                            <th rowspan="2">1 Depth</th>
+                            <th rowspan="2">2 Depth</th>
+                            <th rowspan="2">3 Depth</th>
+                            <th rowspan="2">url</th>
+                            <th rowspan="2">비고</th>
+                        </tr>
+                        <tr>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr>
+                            <td rowspan=""></td>
+                            <td>전체메뉴</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr> -->
+                   
+                        <tr>
+                            <td rowspan="">0</td>
+                            <td rowspan="">메인</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./index.html"
+                                    target="_blank">./index.html</a></td>
+                            <td style="background: yellow;"><span>220314 ~ 수정 <br> 공통 : header, footer <br>콘텐츠 레이아웃 변경</span></td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="">00_member</td>
+                            <td rowspan="">로그인</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./sub/00_member/login.html"
+                                    target="_blank">./sub/00_member/login.html</a></td>
+                            <td ></td>
+                        </tr>
+                      
+                        <!-- 주요업무 -->
+                        <tr>
+                            <td rowspan="6">01_work</td>
+                            <td rowspan="6">주요업무</td>
+                            <td>수련환경평가위원회 운영지원</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./sub/01_work/workCouncil.html" target="_blank">./sub/01_work/workCouncil.html</a></td>
+                            <td style="background: yellow;"><span>220314 ~ 수정</span></td>
+                        </tr>
+                        <tr>
+                            <td>수련환경평가 수행
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./sub/01_work/workAegmt.html" target="_blank">./sub/01_work/workAegmt.html</a></td>
+                            <td style="background: yellow;"><span>220314 ~ 수정</span></td>
+                        </tr>
+                        <tr>
+                            <td>전공의 수련상황 관리</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./sub/01_work/workTraining.html" target="_blank">./sub/01_work/workTraining.html</a></td>
+                            <td style="background: yellow;"><span>220314 ~ 수정</span></td>
+                        </tr>
+                        <tr>
+                            <td>전공의 전형 관리
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./sub/01_work/workCareer.html" target="_blank">./sub/01_work/workCareer.html</a></td>
+                            <td style="background: yellow;"><span>220314 ~ 수정</span></td>
+                        </tr>
+                        <tr>
+                            <td>지도전문의 지정 현황 관리 및 교육과정 운영
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./sub/01_work/workHunet.html" target="_blank">./sub/01_work/workHunet.html</a></td>
+                            <td style="background: yellow;"><span>220314 ~ 수정</span></td>
+                        </tr>
+                        <tr>
+                            <td>전공의 공통역량 교육과정 제공
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./sub/01_work/workCommon.html" target="_blank">./sub/01_work/workCommon.html</a></td>
+                            <td style="background: yellow;"><span>220314 ~ 수정</span></td>
+                        </tr>
+                        <!-- //주요업무 -->
+
+
+                        <tr>
+                            <td rowspan="7">02_notice</td>
+                            <td rowspan="7">알림</td>
+                            <td rowspan="3">공지사항 </td>
+                            <td>list</td>
+                            <td></td>
+                            <td><a href="./sub/02_notice/list.html" target="_blank">./sub/02_notice/list.html</a></td>
+                            <td style="background-color: #fdd5de;"><span>2220204 수정사항 <br> 등록 버튼 추가</span></td>
+                        </tr>
+                        <tr>
+                            <td>write</td>
+                            <td></td>
+                            <td><a href="./sub/02_notice/write.html" target="_blank">./sub/02_notice/write.html</a></td>
+                            <td style="background-color: #fdd5de;"><span>2220204 수정사항 <br> 페이지 추가</span></td>
+                        </tr>
+                        <tr>
+                            <td>view</td>
+                            <td></td>
+                            <td><a href="./sub/02_notice/view.html" target="_blank">./sub/02_notice/view.html</a></td>
+                            <td style="background-color: #fdd5de;"><span>2220204 수정사항 <br> 수정, 삭제 버튼 추가</span></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">채용</td>
+                            <td>list</td>
+                            <td></td>
+                            <td>
+                                <a href="./sub/02_notice/recruitList.html" target="_blank">./sub/02_notice/recruitList.html</a>
+                            </td>
+                            <td style="background-color: #fdd5de;"><span>2220204 수정사항 <br> 등록 버튼 추가</span></td>
+                        </tr>
+                        <tr>
+                            <td>write</td>
+                            <td></td>
+                            <td><a href="./sub/02_notice/write.html" target="_blank">./sub/02_notice/write.html</a></td>
+                            <td style="background-color: #fdd5de;"><span>2220204 수정사항 <br> 페이지 추가</span></td>
+                        </tr>
+                        <tr>
+                            <td>view</td>
+                            <td></td>
+                            <td>
+                                <a href="./sub/02_notice/recruitView.html" target="_blank">./sub/02_notice/recruitView.html</a>
+                            </td>
+                            <td style="background-color: #fdd5de;"><span>2220204 수정사항 <br> 수정, 삭제 버튼 추가</span></td>
+                        </tr>
+                        <tr>
+                            <td>입찰</td>
+                            <td></td>
+                            <td>
+                               
+                            </td>
+                            <td> 채용 list, write, view 참고</td>
+                        </tr>
+
+                        <!-- 자료실 -->
+                        <tr>
+                            <td rowspan="11">03_data</td>
+                            <td rowspan="11">자료실</td>
+                            <td >법령정보</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./sub/03_data/lawInfo.html" target="_blank">./sub/03_data/lawInfo.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">지침</td>
+                            <td>list</td>
+                            <td></td>
+                            <td>
+                                <a href="./sub/03_data/guidelineList.html" target="_blank">./sub/03_data/guidelineList.html</a>
+                            </td>
+                            </td>
+                            <td style="background-color: #fdd5de;"><span>2220204 수정사항 <br> 등록 버튼 추가</span></td>
+                        </tr>
+                        <tr>
+                            <td>write</td>
+                            <td></td>
+                            <td>
+                                <a href="./sub/03_data/guidelineWrite.html" target="_blank">./sub/03_data/guidelineWrite.html</a>
+                            </td>
+                            </td>
+                            <td style="background-color: #fdd5de;"><span>2220204 수정사항 <br> 페이지 추가</span></td>
+                        </tr>
+                        <tr>
+                            <td>view</td>
+                            <td></td>
+                            <td>
+                                <a href="./sub/03_data/guidelineView.html" target="_blank">./sub/03_data/guidelineView.html</a>
+                            </td>
+                            </td>
+                            <td style="background-color: #fdd5de;"><span>2220204 수정사항 <br> 수정, 삭제 버튼 추가</span></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">수련병원현황</td>
+                            <td >list</td>
+                            <td></td>
+                            <td ><a href="./sub/03_data/hospitalList.html" target="_blank">./sub/03_data/hospitalList.html</a></td>
+                            <td style="background-color: #fdd5de;"><span>2220204 수정사항 <br>버튼, checkbox 추가</span></td>
+                        </tr>
+                        <tr>
+                            <td  >write</td>
+                            <td></td>
+                            <td ><a href="./sub/03_data/hospitalWrite.html" target="_blank">./sub/03_data/hospitalWrite.html</a></td>
+                            <td style="background-color: #fdd5de;"><span>2220204 수정사항 <br> 페이지 추가</span></td>
+                        </tr>
+                        <tr>
+                            <td  >view</td>
+                            <td></td>
+                            <td ><a href="./sub/03_data/hospitalView.html" target="_blank">./sub/03_data/hospitalView.html</a></td>
+                            <td style="background-color: #fdd5de;"><span>2220204 수정사항 <br> 수정, 삭제 버튼 추가</span></td>
+                        </tr>
+                        <tr>
+                            <td>평가대상기관현황</td>
+                            <td></td>
+                            <td></td>
+                            <td ><a href="./sub/03_data/agencyStatus.html" target="_blank">./sub/03_data/agencyStatus.html</a></td>
+                            <td></td>
+                        </tr>
+                        
+                        <tr>
+                            <td rowspan="3">수련환경평가결과</td>
+                            <td>list</td>
+                            <td></td>
+                            <td ><a href="./sub/03_data/resultList.html" target="_blank">./sub/03_data/resultList.html</a></td>
+                            <td style="background-color: #fdd5de;"><span>2220204 수정사항 <br> 테이블, 버튼 추가</span></td>
+                        </tr>
+                        <tr>
+                            <td>write</td>
+                            <td></td>
+                            <td><a href="./sub/03_data/resultWrite.html" target="_blank">./sub/03_data/resultWrite.html</a></td>
+                            <td style="background-color: #fdd5de;"><span>2220204 수정사항 <br> 페이지 추가</span></td>
+                        </tr>
+                        <tr>
+                            <td>view</td>
+                            <td></td>
+                            <td><a href="./sub/03_data/resultView.html" target="_blank">./sub/03_data/resultView.html</a></td>
+                            <td style="background-color: #fdd5de;"><span>2220204 수정사항 <br> 수정, 삭제 버튼 추가</span></td>
+                        </tr>
+
+                        <!-- 소개 -->
+                        <tr>
+                            <td rowspan="4">04_intro</td>
+                            <td rowspan="4">소개</td>
+                            <td >수련환경평가본부</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./sub/04_intro/introduce.html" target="_blank">./sub/04_intro/introduce.html</a></td>
+                            <td style="background: yellow;"><span>220314 ~ 수정</span></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">직원현황</td>
+                            <td>list</td>
+                            <td></td>
+                            <td><a href="./sub/04_intro/org.html" target="_blank">./sub/04_intro/org.html</a></td>
+                            <td style="background-color: #fdd5de;"><span>2220204 수정사항 <br> checkbox 추가</span></td>
+                        </tr>
+                        <tr>
+                            <td>write</td>
+                            <td></td>
+                            <td><a href="./sub/04_intro/orgWrite.html" target="_blank">./sub/04_intro/orgWrite.html</a></td>
+                            <td style="background-color: #fdd5de;"><span>2220204 수정사항 <br> 페이지 추가</span></td>
+                        </tr>
+                        <tr>
+                            <td>찾아오시는 길</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./sub/04_intro/map.html" target="_blank">./sub/04_intro/map.html</a></td>
+                            <td></td>
+                        </tr>
+
+                        <!-- 이용안내 -->
+                        <tr>
+                            <td rowspan="2">05_guide</td>
+                            <td rowspan="2">이용안내</td>
+                            <td >홈페이지 이용안내</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./sub/05_guide/useInform.html" target="_blank">./sub/05_guide/useInform.html</a></td>
+                            <td>콘텐츠 준비중</td>
+                        </tr>
+                        <tr>
+                            <td>사이트 맵</td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="./sub/05_guide/sitemap.html" target="_blank">./sub/05_guide/sitemap.html</a></td>
+                            <td></td>
+                        </tr>
+
+                        <!-- 민원신청 -->
+                        <tr>
+                            <td rowspan="7">06_complain</td>
+                            <td rowspan="7">민원신청</td>
+                            <td rowspan="4">민원신청</td>
+                            <td>민원신청 안내</td>
+                            <td></td>
+                            <td><a href="./sub/06_complain/complainInfo.html" target="_blank">./sub/06_complain/complainInfo.html</a></td>
+							<td><span>20220203 수정</span></td>
+                        </tr>
+                        <tr>
+                            <td>규정 안내 및 개인정보 동의</td>
+                            <td></td>
+                            <td><a href="./sub/06_complain/complainStep01.html" target="_blank">./sub/06_complain/complainStep01.html</a></td>
+							<td><span>20220127 수정 <br />- 병원검색 버튼 클릭시 모달</span></td>
+                        </tr>
+                        <tr>
+                            <td>신청서 작성</td>
+                            <td></td>
+                            <td><a href="./sub/06_complain/complainStep02.html" target="_blank">./sub/06_complain/complainStep02.html</a></td>
+                            <td><span>20220203 수정 <br />- 달력창 표출</span></td>
+                        </tr>
+                        <tr>
+                            <td>접수완료</td>
+                            <td></td>
+                            <td><a href="./sub/06_complain/complainStep03.html" target="_blank">./sub/06_complain/complainStep03.html</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+							<td rowspan="3">민원조회</td>
+                            <td rowspan=""></td>
+                            <td></td>
+                            <td><a href="./sub/06_complain/complainLookup.html" target="_blank">./sub/06_complain/complainLookup.html</a></td>
+                            <td><span>20220203 추가</span></td>
+                        </tr>
+						<tr>
+							<td rowspan="2">나의 민원확인</td>
+                            <td>list</td>
+                            <td><a href="./sub/06_complain/myComplain.html" target="_blank">./sub/06_complain/myComplain.html</a></td>
+                            <td><span>20220203 수정 <br />- 민원조회로 명칭 수정<br />- 탭 커서 포인터로 변경</span></td>
+
+                        </tr>
+                        <tr>
+                            <td>view</td>
+                            <td><a href="./sub/06_complain/myComplainView.html" target="_blank">./sub/06_complain/myComplainView.html</a></td>
+                            <td><span>20220203 수정 <br />- 취하 사유 추가</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+</body>
+
+<script>
+	//swiper slide
+	// var mainSwiper = new Swiper('.swiper-container.first', {
+	//     loop: true,
+	//     spaceBetween: 30,
+	//     effect: 'fade',
+	//     centeredSlides: true,
+	//     //        autoplay: {
+	//     //            delay: 2500,
+	//     //            disableOnInteraction: false,
+	//     //        },
+	//     speed: 3000,
+	//     pagination: {
+	//         el: ".swiper-pagination",
+	//       },
+
+	//     navigation: {
+	//         nextEl: '.mainslide .swiper-button-next',
+	//         prevEl: '.mainslide .swiper-button-prev',
+	//     },
+
+	// });
+	// var pagingSwiper = new Swiper(".swiper-container.first", {
+	//     pagination: {
+	//         el: ".swiper-pagination2",
+	//         type: "fraction",
+	//     },
+	// });
+
+	// mainSwiper.controller.control = pagingSwiper;
+</script>
+
+</html>

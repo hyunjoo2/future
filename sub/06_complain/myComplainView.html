@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" charset="UTF-8" name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>[KHA]대한병원협회</title>
+
+
+	<link rel="shortcut icon" href="../../resource/image/common/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../resource/image/common/favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="../../resource/css/animate.css">
+	<link rel="stylesheet" href="../../resource/css/jquery.fullpage.css">
+	<link rel="stylesheet" href="../../resource/css/jquery-ui.css">
+	<link rel="stylesheet" href="../../resource/css/animate.css">
+	<link rel="stylesheet" href="../../resource/css/swiper.min.css">
+	<link rel="stylesheet" href="../../resource/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="../../resource/css/reset.css">
+	<link rel="stylesheet" href="../../resource/css/font.css">
+	<link rel="stylesheet" href="../../resource/css/main.css">
+	<link rel="stylesheet" href="../../resource/css/sub.css">
+	
+
+	<script src="../../resource/js/jquery-1.12.4.min.js"></script>
+	<script src="../../resource/js/jquery.fullpage.min.js"></script>
+	<script src="../../resource/js/jquery-ui.min.js"></script>
+	<script src="../../resource/js/bootstrap.min.js"></script>
+	<script src="../../resource/js/swiper.min.js"></script>
+	<script src="../../resource/js/common.js"></script>
+	<script src="../../resource/js/main.js"></script>
+	<script src="../../resource/js/sub.js"></script>
+
+</head>
+
+
+<body>
+	<div class="wrap">
+		<div id="skipNavigation" title="스킵내비게이션">
+			<a href="#gnb" class="">주메뉴 바로가기 </a>
+			<a href="#contents" class=""> 본문 내용 바로가기 </a>
+		</div>
+		<!-- start : header -->
+		<header>
+			<div class="header">
+				<div class="header__inner d-flex align-items-center justify-content-between">
+
+					<div class="logo-wrap">
+						<a href="javascript:void(0)">
+							<!-- <img src="./resource/image/common/logo.png" alt=""> -->
+						</a>
+					</div>
+
+					<div class="gnb-box pc">
+						<h2 class="hidden">주메뉴</h2>
+						<ul class="gnb d-flex justify-content-between">
+							<li><a href="javascript:void(0)">소개</a>
+								<ul>
+									<li><a href="javascript:void(0)">수련환경평가본부</a></li>
+									<li><a href="javascript:void(0)">직원현황</a></li>
+									<li><a href="javascript:void(0)">찾아오시는 길</a></li>
+								</ul>
+							</li>
+							<li><a href="../02_notice/list.html">알림</a>
+								<ul>
+									<li><a href="../02_notice/list.html">공지사항</a></li>
+									<li><a href="javascript:void(0)">채용</a></li>
+									<li><a href="javascript:void(0)">입찰</a></li>
+								</ul>
+							</li>
+							<li><a href="../03_data/lawInfo.html">자료실</a>
+								<ul>
+									<li><a href="../03_data/lawInfo.html">법령정보</a></li>
+									<li><a href="javascript:void(0)">지침</a></li>
+									<li><a href="../03_data/list.html">수련병원현황</a></li>
+									<li><a href="../03_data/resultList.html">평가대상기 관현황</a></li>
+									<li><a href="javascript:void(0)">수련환경평가결과</a></li>
+								</ul>
+							</li>
+							<li><a href="../01_work/workCouncil.html">주요업무</a>
+								<ul>
+									<li><a href="../01_work/workCouncil.html">수련환경평가위원회 운영지원</a></li>
+									<li><a href="../01_work/workAegmt.html">수련환경평가 수행</a></li>
+									<li><a href="../01_work/workTraining.html">전공의 수련상황 관리</a></li>
+									<li><a href="../01_work/workCareer.html">전공의 전형 관리</a></li>
+									<li><a href="../01_work/workHunet.html">지도전문의 지정 현황 관리 및 <br>	교육과정 운영	</a></li>
+									<li><a href="../01_work/workCommon.html">전공의 공통역량 교육과정 제공</a></li>
+								</ul>
+							</li>
+							<!-- <li><a href="javascript:void(0)">이용안내</a>
+								<ul>
+									<li><a href="javascript:void(0)">홈페이지 이용안내</a></li>
+									<li><a href="javascript:void(0)">사이트 맵</a></li>
+								</ul>
+							</li> -->
+							<li><a href="../06_complain/complainInfo.html">민원신청</a>
+								<ul>
+									<li><a href="../06_complain/complainInfo.html">민원신청</a></li>
+									<li><a href="javascript:void(0)">민원조회</a></li>
+								</ul>
+							</li>
+						</ul>
+						<div class="side-banner">
+
+						</div>
+						<a href="javascript:void(0)" class="gnb-close"><i class="el-icon-close"></i></a>
+					</div>
+
+					<div class="rela-site ">
+						<ul>
+							<li class="mohw"><a href="javascript:void(0)"></a></li>
+							<li class="kha"><a href="javascript:void(0)"></a></li>
+							
+						</ul>
+					</div>
+
+					<div class="user-area">
+						<div class="d-flex align-items-center">
+							<!-- <div><button type="button" class="button-alarm" onclick="location.href='./sub/06_complain/complainInfo.html'"></button></div> -->
+							<div>
+								<!-- 전달사항 :: 로그아웃시 class="button-logout" 으로 바꿔주세요 -->
+								<button type="button" class="button-login" onclick="location.href='./sub/00_member/login.html'"></button>
+							</div>
+							<div>
+								<button type="button" class="button-sitemap pc" onclick="location.href='./sub/05_guide/sitemap.html'"></button>
+								<button type="button" class="button-sitemap mobile"></button>
+								<!-- 사이트맵 모바일 -->
+								<div class="gnb-box mobile">
+									<div class="gnb-box__bg"></div>
+									<div class="gnb-box__inner">
+										<div class="user-area">
+											<div class="d-flex align-items-center m-0">
+												<div class="div-alarm">
+													<button type="button" class="button-alarm"></button>
+												</div>
+												<div class="div-login">
+													<!-- 전달사항 :: 로그아웃시 class="button-logout" 으로 바꿔주세요 -->
+													<button type="button" class="button-login"></button>
+												</div>
+												<div class="ml-auto mr-0 div-close">
+													<button type="button" class="button-close"></button>
+												</div>
+											</div>
+										</div>
+										<div class="y-scroll p-0">
+											<ul class="gnb d-flex">
+												<li><a href="javascript:void(0)">소개<i class="plus"></i></a>
+													<ul>
+														<li><a href="javascript:void(0)">공지사항</a></li>
+														<li><a href="javascript:void(0)">문의사항</a></li>
+														<li><a href="javascript:void(0)">행사</a></li>
+														<li><a href="javascript:void(0)">견학신고</a></li>
+														<li><a href="javascript:void(0)">주변관광</a></li>
+													</ul>
+												</li>
+												
+												<li><a href="javascript:void(0)">알림<i class="plus"></i></a>
+													<ul>
+														<li><a href="javascript:void(0)">교육 프로그래</a></li>
+														<li><a href="javascript:void(0)">도포 투어 프로그램</a></li>
+														<li><a href="javascript:void(0)">공연 프로그램</a></li>
+													</ul>
+												</li>
+												<li><a href="javascript:void(0)">자료실<i class="plus"></i></a>
+													<ul>
+														<li><a href="javascript:void(0)">공지사항</a></li>
+														<li><a href="javascript:void(0)">문의사항</a></li>
+														<li><a href="javascript:void(0)">행사</a></li>
+														<li><a href="javascript:void(0)">견학신고</a></li>
+														<li><a href="javascript:void(0)">주변관광</a></li>
+													</ul>
+												</li>
+												<li><a href="javascript:void(0)">주요업무<i class="plus"></i></a>
+													<ul>
+														<li><a href="javascript:void(0)">수련환경평가위원회 운영지원</a></li>
+														<li><a href="javascript:void(0)">수련환경평가 운영 지원 및 <br> 수련병원 및 수련전문과목 지정</a></li>
+														<li><a href="javascript:void(0)">수련상황관리</a></li>
+														<li><a href="javascript:void(0)">정공의 전형관리</a></li>
+														<li><a href="javascript:void(0)">지도전문의 지정현황관리</a></li>
+														<li><a href="javascript:void(0)">전공의 민원접수</a></li>
+														<li><a href="javascript:void(0)">전공의 공통역량교육</a></li>
+														<li><a href="javascript:void(0)">외과·흉부외과 지원사업</a></li>
+														<li><a href="javascript:void(0)">전공의 단기연수 지원사업</a></li>
+													</ul>
+												</li>
+												
+												<li><a href="javascript:void(0)">민원신청<i class="plus"></i></a>
+													<ul>
+														<li><a href="../06_complain/complainInfo.html">민원신청</a></li>
+														<li><a href="javascript:void(0)">민원조회</a></li>
+													</ul>
+												</li>
+											</ul>
+											<div class="rela-site d-flex align-items-center justify-content-center">
+												<button type="button">보건복지부</button>
+												<button type="button">대한병원협회</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- //사이트맵 모바일 -->
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</header>
+		<!-- end : header -->
+
+		<!-- start : contents -->
+        <div class="contents">
+            <div class="contents__inner">
+                <div class="sub-visual minwon">
+                    <h1 class="font_j">민원조회</h1>
+                    <div class="breadcrumb">
+                        <div class="breadcrumb__inner d-flex align-items-center justify-content-between">
+                            <ul class="d-flex">
+                                <li class="home"><a href="javascript:void(0)"><i></i></a></li>
+                                <li class="last">
+                                    <a href="javascript:void(0)">민원조회 <i></i></a>
+                                    <ul>
+										<li><a href="javascript:void(0)">민원신청</a></li>
+										<li><a href="javascript:void(0)">민원조회</a></li>
+									</ul>
+                                </li>
+                            </ul>
+                            <p class="breadcrumb-txt">HOME - <span>민원조회</span> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contents-core">
+                    <div class="contents-core__inner minwon">
+                        <h2 class="sub-title">나의 민원 확인하기 </h2>
+
+                        <div class="board-view border-bottom__none">
+                            <div class="view-info d-flex align-items-center justify-content-center flex-column">
+                                <div class="d-flex v-bar">
+                                    <p class="view-author"><span class="tit">민원번호</span><span>20211120</span></p>
+                                    <!--
+                                        *진행상태 span class 구분해 주세요 색상 다릅니다*
+                                        [민원 진행 상태 정의]
+                                    
+                                        전형 #e63c2e class="color-red"
+                                        평가 #0e9200 class="color-green"
+                                        수련 #00a2ff class="color-skyblue"
+                                    
+                                        신청 #ef002b class="color-application"
+                                        신청취소 #f58d97 class="color-cancle"
+                                        접수대기 #f57f00 class="color-waiting"
+                                        반려 #907051 class="color-reject"
+                                        종결 #000
+                                        각하 #555 class="color-dismiss"
+                                        취하 #999 class="color-withdraw"
+                                    -->
+                                    <p class="view-hit"><span class="tit">진행상태</span><span class="color-skyblue">처리중</span></p>
+                                    <p class="view-date"><span class="tit">작성일</span><span>2021.06.21</span></p>
+                                </div>
+                                <div class="d-flex d-flex align-items-center v-bar mt_15">
+                                    <p class="view-date"><span class="tit">처리결과 통보일</span><span>2021.06.21</span></p>
+                                    <p class="view-date"><span class="tit">이의제기기간</span><span>2021.06.21</span></p>
+                                    <div class="view-date d-flex align-items-center like-p">
+                                        <span class="tit">이의제기기간 연장</span>
+                                        <div class="d-flex align-items-center">
+                                            <div class="form-select d-flex">
+                                                <select class="select" style="width:10rem;">
+                                                    <option value="">1일</option>
+                                                    <option value="">2일</option>
+                                                    <option value="">3일</option>
+                                                    <option value="">4일</option>
+                                                    <option value="">5일</option>
+                                                </select>
+                                            </div>
+                                            <div class="button-wrap ml-0">
+                                                <button type="button" class="button-yellow">기간 연장</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>   
+
+                            <div class="table ver m-0">
+                                <div class="table__inner th-center td-p1 mt_10">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width:290px">
+                                            <col style="width:auto">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <!-- 관리자가 입력한 내용 일때 th class에 th-admin 추가해 주세요 -->
+                                                <th class="th-admin">민원 반려 사유</th>
+                                                <td>
+                                                    -민원 신청인 직접 경험자 미해당 <br>
+                                                    -민원 신청인 직접 경험자 미해당 <br>
+                                                    -민원 신청인 직접 경험자 미해당 <br>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            
+                            <div class="view-content">
+                                <p>안녕하십니까, 한국저작권위원회 종합민원센터입니다. <br><br>
+                                    코로나 19 감염에 대한 국가위기경보단계가 최고수준인 '심각단계'로 격상됨에 따라 
+                                    코로나 19 확산방지를 위해 공공기관들은 다양한 비상대응 조치들을 진행하고 있습니다.
+                                    이로 인해 외부 민원인 접촉이 많은 등록접수 및 상담, 임치, 조정, 감정, 교육 등의 민원업무 처리가 원활하지 않을 수 있음을 사전에 안내드립니다<br><br>
+                                    
+                                    특히 코로나19 예방 및 확산방지를 위해 방문 신청보다는 가급적 인터넷, 유선, 우편으로 신청해주시기를 부탁드립니다.<br><br>
+                                    
+                                    혹 부득이하게 방문하시는 고객님께서는 반드시 마스크를 착용해주시고, 체온측정과 손 소독제 사용 등 방역 및 위생 관리에 적극 협조하여 주시기 바랍니다.</p>
+                            </div>                        
+                        </div>
+
+                        <div class="">
+                            <div class="table ver">
+                                <div class="table__inner th-center td-p1">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width:290px">
+                                            <col style="width:auto">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <!-- 관리자가 입력한 내용 일때 th class에 th-admin 추가해 주세요 -->
+                                                <th class="th-admin">민원 각하사유</th>
+                                                <td>
+                                                    각하 사유 입니다.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="th-admin">처리 결과 안내</th>
+                                                <td>
+                                                    결과 안내 내용입니다.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="2">이의 제기</th>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <label for=""></label>
+                                                        <textarea name="" id="" cols="30" rows="10" class="form-control w-100" placeholder=""></textarea>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="filebox form-group align-items-center">
+                                                            <input class="upload-name" value="" disabled="disabled" placeholder="">
+                                                            <label for="ex_filename" class="fileattach"><i></i></label>
+                                                            <input type="file" id="ex_filename" class="upload-hidden">
+                                                        </div>
+                                                        <a href="javascript:void(0)" class="ml_15">민원신청서류.hwp</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="th-admin">이의 제기 검토 결과 안내</th>
+                                                <td>
+                                                    결과 안내 내용
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>민원 취하 사유</th>
+                                                <td>
+                                                    <div class="checks d-flex align-items-center ">
+                                                        <input type="radio" id="inter" name="inter" checked=""/><label for="inter">민원 사유 해소</label>
+
+                                                        <div class="d-flex align-items-center ">
+                                                            <input type="radio" id="res" name="inter"/><label for="res">기타</label>
+                                                            <div class="form-group ml_10">
+                                                                <label for=""></label>
+                                                                <input type="text" name="" value="" id="" class="form-input input-l" placeholder="20자 이내로 작성">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+											<tr>
+                                                <th class="">민원 취하 사유</th>
+                                                <td>
+                                                    취하 사유 입니다.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="2">추가 자료</th>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <label for=""></label>
+                                                        <textarea name="" id="" cols="30" rows="10" class="form-control w-100 textarea-hs" placeholder="300자 이내로 작성"></textarea>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="filebox form-group align-items-center">
+                                                            <input class="upload-name" value="" disabled="disabled" placeholder=""/>
+                                                            <label for="fileMore" class="fileattach"><i></i></label>
+                                                            <input type="file" id="fileMore" class="upload-hidden"/>
+                                                        </div>
+                                                        <a href="javascript:void(0)" class="ml_15">추가자료.jpg</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="mt_30">
+                            <div class="button-wrap w-125 same">
+                                <button type="button" class="button-list">목록</button>
+                                <button type="button" class="button-border__red">신청취소</button>
+                                <button type="button" class="button-border__blue">수정</button>
+                                
+                                
+                                <button type="button" class="button-blue">재제출</button>
+                                <button type="button" class="button-blue">제출</button>
+                                <button type="button" class="button-gray">민원취하</button>
+                                <button type="button" class="button-yellow">이의제기</button>
+                                <button type="button" class="button-border__black">이의제기 연장</button>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <div class="footer__inner">
+                    <div class="footer-banner">
+                        <div class="footer-banner__inner">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <img src="../../resource/image/common/img-footer__banner01.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <img src="../../resource/image/common/img-footer__banner02.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <img src="../../resource/image/common/img-footer__banner03.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <img src="../../resource/image/common/img-footer__banner04.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <img src="../../resource/image/common/img-footer__banner05.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <img src="../../resource/image/common/img-footer__banner06.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <img src="../../resource/image/common/img-footer__banner07.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-arrow d-flex align-items-center justify-content-between">
+                                <div class="swiper-button-next footer"></div>
+                                <div class="swiper-button-prev footer"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="footer-info">
+                        <div class="footer-info__inner">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <ul class="d-flex">
+                                        <li><a href="javascript:void(0)" class="color-black">개인정보처리방침</a></li>
+                                        <li><a href="javascript:void(0)">대한병원협회</a></li>
+                                        <li><a href="javascript:void(0)">병원신문</a></li>
+                                        <li><a href="javascript:void(0)">병원검색안내시스템</a></li>
+                                        <li><a href="javascript:void(0)">한국병원경영연구원</a></li>
+                                    </ul>
+                                    <address>
+                                        [04165] 서울 마포구 마포대로 15(마포동 35-1) 현대빌딩 13~14층 대한병원협회 Tel:02-705-9200
+                                        Fax:02-705-9229
+                                    </address>
+                                    <p class="copyright">©Korean Hospital Association. All Rights Reserved.</p>
+                                </div>
+                                <div class="site d-flex">
+                                    <div class="lf">
+                                        <!-- <label for="department_link" id="sidoHpLabel">시도병원회 리스트</label> -->
+                                        <select name="sidoHp" id="department_link"
+                                            onchange="window.open(value,'_blank');">
+                                            <option value="">시도병원회 리스트</option>
+                                            <option value="http://sha.or.kr/main/main.php">서울</option>
+                                            <option value="https://busan.kha.or.kr">부산</option>
+                                            <option value="https://daegu.kha.or.kr">대구/경북</option>
+                                            <option value="https://incheon.kha.or.kr">인천</option>
+                                            <option value="https://gwangju.kha.or.kr">광주/전남</option>
+                                            <option value="https://daejeon.kha.or.kr">대전/세종/충남</option>
+                                            <option value="https://koungki.kha.or.kr">경기</option>
+                                            <option value="https://gangwon.kha.or.kr">강원</option>
+                                            <option value="https://chungbuk.kha.or.kr">충북</option>
+                                            <option value="https://jeonbuk.kha.or.kr">전북</option>
+                                            <option value="https://www.kha.or.kr/sido/SIDO_GYEONGNAM">울산/경남</option>
+                                            <option value="https://jeju.kha.or.kr">제주</option>
+                                        </select>
+                                    </div>
+                                    <div class="lf">
+                                        <!-- <label for="department_link" id="familySiteLabel" >관련기관 홈페이지</label> -->
+                                        <select name="familySite" id="department_link"
+                                            onchange="window.open(value,'_blank');">
+                                            <option value="">관련기관 홈페이지</option>
+                                            <option value="http://www.mohw.go.kr">보건복지부</option>
+                                            <option value="http://www.moi.go.kr">행정자치부</option>
+                                            <option value="http://www.mfds.go.kr">식품의약품안전처</option>
+                                            <option value="http://www.nhis.or.kr">국민건강보험</option>
+                                            <option value="http://www.hira.or.kr">건강보험심사평가원</option>
+                                            <option value="http://www.nps.or.kr">국민연금</option>
+                                            <option value="http://www.kcomwel.or.kr">근로복지공단</option>
+                                            <option value="http://www.knia.or.kr">손해보험협회</option>
+                                            <option value="http://www.kma.org">대한의사협회</option>
+                                            <option value="http://www.akom.org">대한한의사협회</option>
+                                            <option value="http://www.kda.or.kr">대한치과의사협회</option>
+                                            <option value="http://www.ihf-fih.org">IHF</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+<script>
+    //swiper slide
+    // var mainSwiper = new Swiper('.swiper-container.first', {
+    //     loop: true,
+    //     spaceBetween: 30,
+    //     effect: 'fade',
+    //     centeredSlides: true,
+    //     //        autoplay: {
+    //     //            delay: 2500,
+    //     //            disableOnInteraction: false,
+    //     //        },
+    //     speed: 3000,
+    //     pagination: {
+    //         el: ".swiper-pagination",
+    //       },
+
+    //     navigation: {
+    //         nextEl: '.mainslide .swiper-button-next',
+    //         prevEl: '.mainslide .swiper-button-prev',
+    //     },
+
+    // });
+    // var pagingSwiper = new Swiper(".swiper-container.first", {
+    //     pagination: {
+    //         el: ".swiper-pagination2",
+    //         type: "fraction",
+    //     },
+    // });
+
+    // mainSwiper.controller.control = pagingSwiper;
+</script>
+
+</html>
