@@ -1,117 +1,91 @@
 $(function () {
-	subHeader();
-	gnbmenu();
-	popLogin();
-	fileupload();//파일 업로드
+	gnbSubMenu();
+	gnbBarMovefn();
+	sitemap();
 });
 
 
-function subHeader(){
-	$("#fullpage").prev().children().addClass("main");
+//Tweenmax를 이용한 header  
+function gnbSubMenu(){
+	var gnb = $(".gnb");
+	var gnbChild = $(".gnb > div");
+	var gnbTitle = gnb.find('a');
+
+	gnbChild.on({
+		mouseover: function(){
+			$(this).addClass('on')			
+		},
+		mouseleave: function(){
+			$(this).removeClass('on');
+		}
+	});
+	gnbTitle.mouseover(function(){
+		headerOpen();
+	});
+	$('.header').mouseleave(function(){
+		headerClose();
+		//$('body').css('overflow', 'initial')
+	});
+
+	function headerOpen() {  //Tweenmax를 이용한 헤더 메뉴 슬라이드 open
+		TweenMax.killAll();
+		TweenMax.to($(".header"), .5, {
+			height : 400,
+			ease : 'easeOutExpo'
+		});
+		$(".header__inner").addClass("on");
+	}
+
+	function headerClose() {  //Tweenmax를 이용한 헤더 메뉴 슬라이드 close
+		TweenMax.killAll();
+		TweenMax.to($(".header"), .5, {
+			height : 100,
+			ease : 'easeOutExpo',
+			onComplete : function() {
+				$(".header__inner").removeClass("on");
+			}
+		});
+		$('.overlay').removeClass('on');
+		$(".gnb-hover-bar").removeClass("on");
+		$("#gnb > li > a").removeClass("on");
+	}
+
+
+	
+
 }
 
-function gnbmenu(){
-	var gnbmenuLi = $(".header .pc .gnb>li ");
-	var gnbmenuA = gnbmenuLi.children();
-	var gnbmenuUl = gnbmenuA.next();
-
-
-	// gnbmenuA.hover(function () {
-	// 	$(this).addClass("on");
-	// 	$(this).next().addClass("open");
-	// }, function () {
-	// 	$(this).removeClass("on");
-	// 	$(this).next().removeClass("open");
-	// });
-
-	gnbmenuA.mouseover(function(){
+var gnbBarWidth;
+function gnbBarMovefn() {
+	$("#gnb > li > a").mouseover(function() {
 		$(this).addClass("on");
-		$(this).next().addClass("open");
 		$(this).parent().siblings().children().removeClass("on");
-		$(this).parent().siblings().children().next().removeClass("open");
-	});
-
-	gnbmenuUl.mouseleave(function(){
-		$(this).removeClass("open");
-		$(this).prev().removeClass("on");
+		
+		$(this).next().addClass("on");
+		$("#gnb > li > a+ul>li>a").mouseover(function() {
+			$(this).parent().parent().prev().addClass("on");
+			$(this).parent().parent().parent().siblings().children().removeClass("on");
+		});
 	});
 	
-	$(".gnb").mouseleave(function(){
-		$(gnbmenuUl).removeClass("open");
-		$(gnbmenuA).removeClass("on");
-	});
-
-
 	
-
-
-
+	$(".depth2").mouseover(function() {
+		//$("#gnb > li > a").removeClass("on");
+		// var indexNum = $(this).parent().index();
+		// TweenMax.to($(".gnb_hover_bar"), .2, {
+		// 	left : gnbBarWidth * indexNum
+		// });
+	});
 }
 
-function popLogin(){
-	$("#btnLogin").click(function(){
-		$('div.modal').modal();
+function sitemap(){
+	$(".button-sitemap").click(function(){
+		//$(this).toggleClass("open");
+		$(this).parent().next().toggleClass("open");
+		$("html, body").addClass("overflow-hidden");
+	})
+	$(".sitemap-header .button-close").click(function(){
+		$(".sitemap").removeClass("open");
+		$("html, body").removeClass("overflow-hidden");
 	})
 }
-
-
-function fileupload(){
-	var fileTarget = $('.filebox .upload-hidden');
-
-    fileTarget.on('change', function(){
-        if(window.FileReader){
-            var filename = $(this)[0].files[0].name;
-        } else {
-            var filename = $(this).val().split('/').pop().split('\\').pop();
-        }
-
-        $(this).siblings('.upload-name').val(filename);
-    });
-}
-
-
-
-
-// 600이하 sitemap 클릭시 fullpage 스크롤 막기
-$(function(){
-	//resize: 브라우저 창 너비의 변경된 값을 width 변수에 저장
-	$(window).resize(function () {
-		var width = $(window).width();
-		if (width<=720) {
-			//gnb sitemap 모바일
-			$(".button-sitemap").click(function(){
-				$("html, body").addClass("overflow-hidden");
-				$(".gnb-box.mobile").addClass("open");
-			});
-			$(".button-close, .gnb-box__bg").click(function(){
-				$("html, body").removeClass("overflow-hidden");
-				$(".gnb-box.mobile").removeClass("open");
-			});
-			
-			
-		} 
-		//else if (width>=768 && width<992) { 
-		//} else if (width>768) {
-		//}
-	});
-
-	//$(window).trigger("resize"); //강제로 호출하는 함수
-
-
-
-	var gnbmenuLiMobile = $(".header .mobile .gnb>li ");
-
-	$(gnbmenuLiMobile).click(function(){	
-		$(this).toggleClass("active");
-		//$(this).siblings().removeClass("active");
-
-		if($(this).hasClass("active")){
-			$(this).children().next().slideDown();
-		}else{
-			$(this).children().next().slideUp();
-		}
-
-		
-		//$(this).siblings().children().next().removeClass("open");
-	});
-});

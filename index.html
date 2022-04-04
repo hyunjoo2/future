@@ -5,10 +5,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="Content-Type" charset="UTF-8" name="viewport"
 		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-	<title>[KHA]대한병원협회</title>
+	<title>키스트 미래재단</title>
 
-	<link rel="shortcut icon" href="./resource/image/common/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="./resource/image/common/favicon.ico" type="image/x-icon">
+	<!-- <link rel="shortcut icon" href="./resource/image/common/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="./resource/image/common/favicon.ico" type="image/x-icon"> -->
 
 	<link rel="stylesheet" href="./resource/css/animate.css">
 	<link rel="stylesheet" href="./resource/css/jquery.fullpage.css">
@@ -27,7 +27,7 @@
 	<script src="./resource/js/jquery-ui.min.js"></script>
 	<script src="./resource/js/bootstrap.min.js"></script>
 	<script src="./resource/js/swiper.min.js"></script>
-	<script src="./resource/js/sly.min.js"></script>
+	<script src="./resource/js/TweenMax.min.js"></script>
 	<script src="./resource/js/common.js"></script>
 	<script src="./resource/js/main.js"></script>
 	<script src="./resource/js/sub.js"></script>
@@ -44,7 +44,7 @@
 		<!-- start : header -->
 		<header>
 			<div class="header">
-				<div class="header__inner d-flex align-items-center justify-content-between">
+				<div class="header__inner d-flex justify-content-between">
 
 					<div class="logo-wrap">
 						<a href="javascript:void(0)">
@@ -57,9 +57,10 @@
 
 						<ul id="gnb" class="gnb row mb-0">
 							<li>
-								<a href="javascript:void(0)" class="first">발전재단 소개                          </a>
-								<ul>
-									<li><a href="javascript:void(0)" class="first">이사장 인사말</a>
+								<a href="/future/sub/01_intro/intro.html" class="first">발전재단 소개                          </a>
+								<ul class="depth2">
+									<li><a href="/future/sub/01_intro/intro.html" class="first">이사장 인사말</a>
+									<li><a href="/future/sub/01_intro/history.html">이사회</a>
 									<li><a href="javascript:void(0)">이사회</a>
 									<li><a href="javascript:void(0)">사업안내</a></li>
 									<li><a href="javascript:void(0)">오시는 길</a></li>
@@ -67,23 +68,25 @@
 							</li>
 							<li>
 								<a href="javascript:void(0)">기부하기</a>
-								<ul>
+								<ul class="depth2">
 									<li><a href="javascript:void(0)">참여방법</a>
 									<li><a href="javascript:void(0)">기부금 용도</a>
 								</ul>
 							</li>
 							<li>
 								<a href="javascript:void(0)">기부자 예우</a>
-								<ul>
+								<ul class="depth2">
 									<li><a href="javascript:void(0)">기부자 예우</a>
 								</ul>
 							</li>
 							<li>
 								<a href="javascript:void(0)">공지사항</a>
-								<ul>
+								<ul class="depth2">
 									<li><a href="javascript:void(0)">공지사항</a>
 								</ul>
 							</li>
+						</ul>
+						<!-- <div class="gnb_hover_bar"></div> -->
 					</div>
 
 					
@@ -91,12 +94,54 @@
 					<div class="user-area">
 						<div class="d-flex align-items-center">
 							<div>
-								<button type="button" class="button-sitemap pc"
-									onclick="location.href='./sub/05_guide/sitemap.html'">
+								<button type="button" class="button-sitemap pc">
 									<span></span>
 									<span></span>
 									<span></span>
 								</button>	
+							</div>
+							<div class="sitemap">
+								<div class="sitemap-header">
+									<div class="d-flex justify-content-between">
+										<div class="sitemap-logo">
+											<a href="javascript:void(0)"><img src="./resource/image/common/logo.png" alt=""></a>
+										</div>
+										<button type="button" class="button-close">
+											<span></span>
+											<span></span>
+										</button>
+									</div>
+								</div>
+								<ul>
+									<li>
+										<a href="javascript:void(0)" class="first">발전재단 소개                          </a>
+										<ul class="depth2">
+											<li><a href="javascript:void(0)" class="first">이사장 인사말</a>
+											<li><a href="javascript:void(0)">이사회</a>
+											<li><a href="javascript:void(0)">사업안내</a></li>
+											<li><a href="javascript:void(0)">오시는 길</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="javascript:void(0)">기부하기</a>
+										<ul class="depth2">
+											<li><a href="javascript:void(0)">참여방법</a>
+											<li><a href="javascript:void(0)">기부금 용도</a>
+										</ul>
+									</li>
+									<li>
+										<a href="javascript:void(0)">기부자 예우</a>
+										<ul class="depth2">
+											<li><a href="javascript:void(0)">기부자 예우</a>
+										</ul>
+									</li>
+									<li>
+										<a href="javascript:void(0)">공지사항</a>
+										<ul class="depth2">
+											<li><a href="javascript:void(0)">공지사항</a>
+										</ul>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -124,12 +169,12 @@
 										</div>
 										<div class="text ml_20">
 											키스트 미래재단과 함께해 주세요. <br>
-											따뜻한 나눔이 과학기술의<br>
-											미래를 만듭니다.
+											따뜻한 나눔이 과학기술의 <br>
+											미래를 만듦니다.
 										</div>
 									</div>
 									<div class="button-wrap">
-										<button type="button"></button>
+										<button type="button" class="button-donation"></button>
 									</div>
 								</div>
 								<div class="donation-count">
@@ -146,14 +191,97 @@
 				</div>
 				<div class="main-middle">
 					<h1 class="text-center"><span class="color-red">키스트</span> 미래재단</h1>
-					<p class="des">여러분의 기부금은 이렇게 사용됩니다.</p>
-					<div class="img-wrap">
+					<p class="des text-center mt_20">여러분의 기부금은 이렇게 사용됩니다.</p>
+					<div class="img-wrap mt_100">
 						<img src="./resource/image/main/img-middle.png" alt="">
+					</div>
+					<div class="button-wrap text-center">
+						<button type="button" class="button-donation"></button>
+					</div>
+				</div>
+				<div class="main-bottom">
+					<div class="main-bottom__inner">
+						<div class="noticeEtc  d-flex">
+							<div class="notice">
+								<div class="title d-flex">
+									<h2>공지사항</h2>
+									<div class="button-wrap ">
+										<button type="button"><i></i></button>
+									</div>
+								</div>
+								<ul>
+									<li><a href="javasctipt:void(0)">홈페이지 이용자 분들께 알립니다.홈페이지 이용자 분들께 알립니다.홈페이지 이용자 분들께 알립니다.</a><span class="date">2022-03-24</span></li>
+									<li><a href="javasctipt:void(0)">2030비전 기금 관련 공지사항 드립니다.</a><span class="date">2022-02-15</span></li>
+									<li><a href="javasctipt:void(0)">사이트 업데이트 관련 공지드립니다.</a><span class="date">2022-01-28</span></li>
+									<li><a href="javasctipt:void(0)">2022년 1월 개편 예정 안내드립니다.</a><span class="date">2022-01-23</span></li>
+									<li><a href="javasctipt:void(0)">2022년 1월 개편 예정 안내드립니다.</a><span class="date">2022-01-23</span></li>
+								</ul>
+							</div>
+							<div class="etc">
+								<div class="etc__inner">
+									<div class="img-wrap d-flex flex-column">
+										<img src="./resource/image/main/img-account.jpg" alt="">
+										<img src="./resource/image/main/img-qna.jpg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
+		<footer>
+			<div class="footer">
+				<div class="footer__inner">
+					<div class="footer-banner">
+						<div class="footer-banner__inner d-flex align-items-center justify-content-between">
+							<p class="text"><strong><em class="color-red">키스트</em> <em class="color-black">미래재단</em></strong>은 공익위반사항 관리·감독기관이 개설한 인터넷 홈페이지를 다음과 같이 게시(연결)합니다.</p>
+							<div class="banner">
+								<div class="banner__inner d-flex">
+									<div><a href="https://www.acrc.go.kr/" target="_blank"><img src="./resource/image/main/img-banner01.png" alt="국민권익위원회"></a></div>
+									<div><a href="https://www.nts.go.kr/" target="_blank"><img src="./resource/image/main/img-banner02.png" alt="국세청"></a></div>
+									<div><a href="https://www.msit.go.kr/index.do" target="_blank"><img src="./resource/image/main/img-banner03.png" alt="과학기술정보통신부"></a></div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="footer-privacy">
+						<div class="footer-privacy__inner">
+							<ul class="d-flex">
+								<li class="privacy"><a href="javascript:void(0)">개인정보처리방침</a></li> 
+								<li><a href="javascript:void(0)">이메일</a></li>
+								<li><a href="javascript:void(0)">무단수집거부</a></li>
+								<li><a href="javascript:void(0)">운영자에게</a></li>
+								<li><a href="javascript:void(0)">주요연락처</a></li>
+								<li><a href="javascript:void(0)">찾아오시는 길</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer-address">
+						<div class="footer-address__inner d-flex">
+							<div class="footer-logo">
+								<a href="javascript:void(0)"><img src="./resource/image/common/logo.png" alt=""></a>
+							</div>
+							<div class="address-text">
+								<div>
+									<p>136-791 서울특별시 성북구 화랑로 14길 5</p>
+									<ul class="d-flex  detail">
+										<li>TEL : 02-958-6121</li>
+										<li>FAX : 02-958-5478</li>
+										<li>E-mail : sharingkist@kist.re.kr</li>
+									</ul>
+								</div>
+								<p class="copyright mt_15">
+									COPYRIGHT(C) 2022 BY KIST. ALL RIGHTS RESERVED.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 
 	</div>
 </body>

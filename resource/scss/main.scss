@@ -56,6 +56,10 @@
         }
     }
     .user-area{
+        height: 10rem;
+        >div{
+            height: 100%;
+        }
         .button{
             &-sitemap{
                 @include display-flex;
@@ -63,6 +67,8 @@
                 justify-content: space-between;
                 width:4rem;
                 height: 3rem;
+                padding:0;
+                margin: 0; 
                 span{
                     width:4rem;
                     height:.4rem;
@@ -73,6 +79,59 @@
     }
 }
 
+.sitemap{
+    display: none;
+    &.open{
+        display: block;
+        position: fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100vh;
+        background: #ffffff;
+    }
+    &-header{
+        height: 10rem;
+        padding: 0 5rem;
+        >div{
+            @include display-flex;
+            @include align-center;
+            height:100%;
+        }
+        .button-close{
+            width:3rem;
+            height:3rem;
+            background: url(../image/common/icon-close.png);
+            background-size: 100%;
+        }
+    }
+    >ul{
+        display: table;
+        margin: 0 auto;
+        >li{
+            @include display-flex;
+            line-height: 10rem;
+            >a{
+                width: 31.5rem;
+                font: {
+                    size:3rem;
+                    weight:500;
+                }
+                &+ul{
+                    @include display-flex;
+                    li{
+                        a{
+                            font: {
+                                size:3rem;
+                                weight:200;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 /* main-visual */ 
 .main{
@@ -80,12 +139,14 @@
         position: relative;
         &__inner{
             height: 98rem;
-            background: url(../image/main/main-visual.jpg);
+            background: url(../image/main/main-visual.jpg) no-repeat center;
+            background-size: cover;
         }
     }
     &-middle{
         max-width: 140rem;
         margin: 0 auto;
+        padding:12rem 0 9rem 0;
         h1{
             font: {
                 size: 4.6rem;
@@ -95,6 +156,93 @@
                 font: {
                     size: 4.6rem;
                     weight: bold;
+                }
+            }
+        }
+        .des{
+            font-size: 2rem;
+            color:#747478;
+        }
+        .img-wrap{
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        .button{
+            &-wrap{
+                margin-top: 10rem !important;
+            }
+            &-donation{
+                width: 38rem;
+                height: 9rem;
+                margin: 0;
+                background: url(../image/main/button-donation__directly.png) no-repeat center;
+                border-radius: 1.5rem;
+                color:#ff6464;
+                font: {
+                    size: 3rem;
+                    weight: bold;
+                }
+                box-shadow: 1rem 1rem 1.6rem rgba(93,16,16,.18);
+            }
+        }
+        
+    }
+    &-bottom{
+        background: #f9f9f9;
+        &__inner{
+            max-width: 140rem;
+            margin: 0 auto;
+            padding:8rem 0 10rem 0;
+        }
+        .noticeEtc{
+            margin: 0 -6rem;
+            >div{
+                flex:1;
+                padding:0 6rem;
+            }        
+        }
+        .notice{
+            .title{
+                margin-bottom:3rem;
+                h2{
+                    font: {
+                        size:3.4rem;
+                        weight:600;
+                    }
+                }
+                .button-wrap{
+                    margin-left: auto;
+                    i{
+                        display: block;
+                        width:3.9rem;
+                        height:2rem;
+                        background: url(../image/main/icon-quick.png) no-repeat center;
+                        background-size: cover
+                    }
+                }
+            }
+            ul{
+                li{
+                    @include display-flex;
+                    @include align-center;
+                    height: 6.5rem;
+                    border-bottom:1px solid #e7e7e7;
+                    &:first-child{
+                        border-top:2px solid #000000;
+                    }
+                    a{
+                        @include text-overflow;
+                        font-size:1.8rem;
+                    }
+                    .date{
+                        flex:none;
+                        font-size:1.6rem;
+                        color:#747478;
+                        margin-left: auto;
+                        padding-left: 2rem;
+                    }
                 }
             }
         }
@@ -202,120 +350,110 @@
 
 
 /* footer */
-.footer__inner{
-    .footer{
-        &-banner{
-            border-bottom:1px solid #dedede;
-            &__inner{
-                position: relative;
-                height: 6.4rem;
+.footer{
+    &__inner{
+        border-top:2px solid;
+        >div{
+            >div{
                 max-width: 140rem;
                 margin: 0 auto;
             }
         }
-        &-info{
-            &__inner{
-                max-width: 140rem;
-                margin: 0 auto;
-                padding:4rem 0 4.6rem 0;
+    }
+    &-banner{
+        &__inner{
+            height:8rem;
+        }
+        .text{
+            font-size:1.5rem;
+            color:#747478;
+            *{
+                font-size:1.5rem;
             }
-            ul{
-                margin: 0 -1rem;
-                li{
-                    padding:0 1rem;
-                    a{
-                        font-size: 1.7rem;
-                        color:#555555;
-                        font-weight: 600;
-                    }
+            strong{
+                em{
+                    font-weight: 500;
                 }
             }
-            address{
-                margin-top:29px;
-                font-size: 1.5rem;
-                line-height: 28px;
+        }
+        .banner{
+            &__inner{
+                margin: 0 -.5rem;
+                >div{
+                    padding: 0 .5rem;
+                }
             }
-            .copyright{
-                font-size: 1.5rem;
-                color:#555555;
-                line-height: 28px;
-            }
-            .site{
-                margin-top: -1rem;
-                margin: -1rem -.6rem 0 -.6rem;
-                .lf{
-                    position:relative;
-                    
+        }
+    }
+    &-privacy{
+        background: #eeeeee;
+        border-top:1px solid #d7d7d7;
+        ul{
+            margin: 0 -4rem;
+            li{
+                height:6.5rem;
+                padding:0 4rem;
+                a{
+                    @include display-flex;
+                    @include align-center;
+                    height:100%;
                     font-size:1.6rem;
-                    color: #555555;
-                    label{
-                        @include display-flex;
-                        @include align-center;
-                        position:absolute;
-                        top:50%;
-                        left:1.5rem;
-                        height:50%;
-                        font-size:1.6rem;
-                        color: #555555;
-                        background: #ffffff;
-                        transform: translateY(-50%);
+                    color:#747478;
+                }
+                &.privacy{
+                    
+                    a{
+                        color:#000000;
+                        font-weight:600;
                     }
                 }
-                select{
-                    width:20.5rem;
-                    margin: 0 .6rem;
-                    font-size:1.7rem;
-                    background: url(../image/common/icon/select-arrow.png) no-repeat right 1rem center;
-                    background-size: 2.5rem;
-                    color: #555555;
-                    line-height:100%;
+            }
+        }
+    }
+    &-address{
+        height:21rem;
+        border-top:1px solid #dbdbdb;
+        background: #e0e0e0;
+        &__inner{
+            @include display-flex;
+            @include align-center;
+            max-width: 140rem;
+            height:100%;
+            margin: 0 auto;
+        }
+        .footer-logo{
+            margin-right:4.5rem;
+        }
+        .address-text{
+            font-size:1.6rem;
+            *{
+                font-size:1.6rem;
+                line-height: 2.6rem;
+            }
+            .detail{
+                margin:0 -1.3rem;
+                li{
+                    position:relative;
+                    padding:0 1.3rem;
+                    line-height: 2.6rem;
+                    font-size:1.6rem;
+                    color:#222222;
+                    &+li{
+                        &::before{
+                            position:absolute;
+                            top:.7rem;
+                            left:0;
+                            width:1px;
+                            height:1.3rem;
+                            background: #222222;
+                            content:""
+                        }
+                    }
+                    
                 }
             }
         }
     }
-    .swiper{
-        &-container {
-            height: 100%; 
-            margin: 0 9rem;  
-        }
-        &-slide{
-            height: 100%;
-            a{
-                @include d-flex;
-                height: 100%;
-                img{
-                    max-width:100%;
-                    max-height:80%;
-                    flex: none;
-                }
-            }
-        }
-        &-button{
-            &-prev, &-next{
-                top: 0;
-                width: 3.5rem;
-                height: 100%;
-                margin:0;
-                border-radius: 100%;
-                background-size: 100% !important;
-                background-position: center !important;
-                z-index: 1;
-                &::after{
-                    content:""
-                }
-            }
-            &-prev{
-                background: url(../image/common/icon/icon-footerBanner__prev.png) no-repeat;
-                left: 0;
-            }
-            &-next{
-                background: url(../image/common/icon/icon-footerBanner__next.png) no-repeat ;
-                right: 0;
-                
-            }
-        }
-    }
-    
 }
 
 

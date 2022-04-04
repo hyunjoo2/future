@@ -198,21 +198,21 @@ html {
     font-size: 62.5%; //1em = 10px로 설정
     font-weight: $font-weight__r;
     letter-spacing: -0.25px;
-    @include height-l {
-        font-size: 52.5%;
-    }
-    @include mobile-l{ //720px
-        font-size:  57.81%;
-    }
-    @include mobile-ml{ //640px
-        font-size:  calc(62.5% / 1.3);
-    }
-    @include mobile-m{ //540px
-        font-size:  calc(62.5% / 1.7);
-    }
-    @include mobile-s{ //375px
-        font-size:  calc(62.5% / 2);
-    }
+    // @include height-l {
+    //     font-size: 52.5%;
+    // }
+    // @include mobile-l{ //720px
+    //     font-size:  57.81%;
+    // }
+    // @include mobile-ml{ //640px
+    //     font-size:  calc(62.5% / 1.3);
+    // }
+    // @include mobile-m{ //540px
+    //     font-size:  calc(62.5% / 1.7);
+    // }
+    // @include mobile-s{ //375px
+    //     font-size:  calc(62.5% / 2);
+    // }
 }
 
 
@@ -343,17 +343,45 @@ p{
 .header{
     position: absolute;
     width:100%;
-    height: 10.01rem;
     //background: rgba($color: #000000, $alpha: 0.2);
     z-index: 2;
+    
     &__inner{
+        height: 10rem;
         height: 100%;
         margin: 0 auto;
         padding:0 5rem;
+        overflow: hidden;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.09);
+        &.on{
+            position: relative;
+            background: #ffffff;
+            &::before{
+                position:absolute;
+                left: 0;
+                bottom:0;
+                width:100%;
+                height:calc(100% - 10rem);
+                background: #fffbfb url(../image/main/bg-gnb.png) no-repeat center bottom 3rem;
+                content:"";
+                z-index: 0;
+            }
+            &::after{
+                position:absolute;
+                top:10rem;
+                width:100%;
+                height:1px;
+                background: #efefef;
+                content:"";
+                z-index: 1;
+            }
+        }
     }
+    
+        
     .logo-wrap{
         width: 17.8rem;
-        height: 100%;
+        height: 10rem;
         a{
             @include d-flex;
             height: 100%;
@@ -382,7 +410,7 @@ p{
             }
             >a{
                 @include d-flex;
-                height:100%;
+                height:10rem;
                 //padding: 0 5rem;
                 text-shadow: 16.2px 11.8px 44px rgba(0, 0, 0, 0.28);
                 -webkit-text-stroke: 1px rgba(0, 0, 0, 0.28);
@@ -390,47 +418,46 @@ p{
                 font-weight: $font-weight__m;
                 //color: #ffffff;
                 &.on{
-                    color:#00a2ff;
-                    background: #f8f8f8;
+                    position: relative;
+                    color:#ff6464;
+                    &::before{
+                        position:absolute;
+                        left:0;
+                        bottom:0;
+                        width:100%;
+                        height:.3rem;
+                        background: #ff6464;
+                        content:""
+                    }
                 }
                 +ul{
-                    display: none;
+                    //display: none;
                     position:absolute;
                     //left:50%;
                     width:100%;
                     padding: 3rem 1rem;
-                    background: #f9fafa;
+                    padding-top: 2rem;
+                    //background: #f9fafa;
                     border-top:1px solid #b4b4b4;
                     //transform: translateX(-50%);
-                    &.open{
-                        @include d-flex;
-                        @include flex-column;
-                    }
                     li{
-                        &+li{
-                            margin-top: 1rem;
-                        }
+                        // &+li{
+                        //     margin-top: 1rem;
+                        // }
                         a{
                             position:relative;
                             @include d-flex;
                             width:100%;
                             height: 100%;
-                            font-size:1.7rem;
-                            font-weight: 500;
-                            color:#0e253a;
-                            line-height: 1.5;
+                            font-size:1.8rem;
+                            font-weight: 300;
+                            color:#555555;
+                            line-height: 5rem;
                             letter-spacing: -0.4px;
                             text-align: center;
                             &:hover{
-                                color:#00a2ff;
-                                &::before{
-                                    position:absolute;
-                                    bottom:0;
-                                    width:100%;
-                                    height:1px;
-                                    background: #00a2ff;
-                                    content:""
-                                }
+                                color:#ff6464;
+                                font-weight: 500;
                             }
                         }
                     }
@@ -438,6 +465,7 @@ p{
             }
         }
         &-box{
+            position: relative;
             &.mobile{
                 display: none;
             }
@@ -446,7 +474,18 @@ p{
     
 }
 
-
+.gnb_hover_bar{
+    position:absolute;
+    left:0;
+    top:10rem;
+    width:19rem;
+    height:0;
+    background:#ff6464;
+    transition: height 0.2s; 
+    &.on{
+        height:.3rem;
+    }
+}
 
 
 
@@ -1104,365 +1143,4 @@ ul{
 /*===================================================================================================
 ===========================================  responsive ==========================================
 ==================================================================================================*/ 
-
-
-
-@media screen and(max-width:1200px) {
-    .header{
-        //height:17rem;
-        &__inner{
-            padding:0 3rem;
-        }
-        .logo-wrap{
-            margin-right:1rem !important;
-        }
-        .gnb-box{
-            display: none;
-        }
-        .rela-site{
-            margin:0 2rem;
-            margin-left: auto;
-            ul{
-                //flex-direction: column;
-                margin: 0;
-                // li{
-                //     padding:1rem 0;
-                //     text-align: center;
-                //     &+li{
-                //         &::before{
-                //             top:0;
-                //             left: 50%;
-                //             transform: translateY(-50%);
-                //         }
-                //     }
-                // }
-            }
-        } 
-        .user-area {
-            >div{
-                margin:0;
-                margin-right:-1rem;
-                div{
-                    padding:0 1rem;
-                }
-            }
-        }
-
-    }
-    .form{
-        &-check{
-            padding:2rem 0;
-        }
-    }     
-}
-
-@media screen and(max-width:720px){
-    // .overflow-hidden .wrap{
-    //     position:fixed;
-    //     top: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     background: rgba(0, 0, 0, 0.66);
-    //     z-index: -1;
-    // }
-    .rela-site, .user-area>div>div:not(:last-child){
-        display: none !important;
-    }
-    
-    
-    .header {
-        .logo-wrap{
-            width:18.6rem;
-        }
-        &.main{
-            position: absolute;
-        }
-        .y-scroll{
-            height: calc(100vh - 20rem);
-            overflow-x: hidden;
-            overflow-y: scroll;
-        }
-        .user-area{
-            >div{
-                padding:0;
-            }
-            .button{
-                &-sitemap{
-                    width:4.6rem;
-                    height: 4.8rem;
-                    &.pc{
-                        display: none;
-                    }
-                    &.mobile{
-                        display: block;
-                    }
-                }
-            }
-            .div{
-                &-alarm, &-login{
-                    display: flex !important;
-                }
-            }
-        }
-        .gnb{
-            &-box{
-                &__bg{
-                    display: none;
-                    position:fixed;
-                    top: 0;
-                    left:0;
-                    width: 100%;
-                    height: 100%;
-                    background: rgba(0, 0, 0, 0.66);
-                    z-index: -1;
-                }
-                &.mobile{
-                    display: block;
-                    position: fixed;
-                    top:0;
-                    right:-100%;
-                    width:0; 
-                    height:100%;
-                    transition:all .5s linear;
-                    .gnb{
-                        &-box{
-                            &__inner{
-                                display: block;
-                                width:75%;
-                                height:100%;
-                                margin-left:auto;
-                                padding:0;
-                                background: #ffffff;
-                                //transition:all .5s;
-                            }
-                        }
-                    }
-                    &.open{
-                        display: block;
-                        right:0%;
-                        width:100%;
-                        padding:0;
-                        //background: #ffffff;
-                        z-index: 999;
-                        .gnb-box__bg{
-                            display: block;
-                        }
-                        .user-area{
-                            height:17rem;
-                            padding:4rem 3.5rem 4rem 4rem;
-                            background: #ffffff;
-                            >div{
-                                width:100%;
-                                height:100%;
-                                margin: 0 -1rem;
-                                padding:0;
-                                >div{
-                                    @include d-flex;
-                                    margin: 0 1rem;
-                                    padding:0;
-                                    
-                                    >button{
-                                        width: 100%;
-                                        height: 100%;   
-                                    }
-                                    .button{
-                                        &-alarm{
-                                            background-size: 4.1rem 5rem;
-                                        }
-                                        &-login{
-                                            background-size: 3.4rem 3.9rem;
-                                            background-image: url(../image/common/icon/icon-login.png);
-                                        }
-                                        &-logout{
-                                            background-size: 3.6rem 4rem;
-                                        }
-                                    }
-                                    &.div{
-                                        &-alarm{
-                                            width: 9rem;
-                                            height:9rem;
-                                            background: #a3a3a3;
-                                            border-radius: 100%;
-                                        }
-                                        &-login{
-                                            width: 9rem;
-                                            height:9rem;
-                                            background: #999999;
-                                            border-radius: 100%;
-                                        }
-                                        &-close{
-                                            width:4.7rem;
-                                            height:4.7rem;
-                                            border:none;
-                                            button{
-                                                width:100%;
-                                                height:100% !important;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            
-                        }
-                        .gnb{
-                            @include flex-column;
-                            height: auto;
-                            >li{
-                                
-                                flex:none;
-                                border-bottom:1px solid #dddddd;
-                                &:first-child{
-                                    border-top:1px solid #dddddd;
-                                }
-                                &:nth-child(4){
-                                    ul{
-                                        li{
-                                            a{
-                                                letter-spacing: normal;
-                                            }
-                                        }
-                                    }
-                                }
-                                >a{
-                                    height: 12rem;
-                                    justify-content: flex-start;
-                                    padding:4rem;
-                                    font-size:3.6rem;
-                                    font-weight:normal;
-                                    color:#000000;
-                                    text-shadow: none;
-                                    i{
-                                        display: block;
-                                        position:relative;
-                                        width:2rem;
-                                        height: 1.9rem;
-                                        margin-left:auto;
-                                        &::after, &::before{
-                                            display: inline-block;
-                                            position:absolute;
-                                            background: #000000;
-                                            content:""
-                                        }
-                                        &::after{
-                                            left: 50%;
-                                            transform: translateX(-50%);
-                                            width:.3rem;
-                                            height:2rem;
-                                        }
-                                        &::before{
-                                            top: 50%;
-                                            transform: translateY(-50%);
-                                            width:1.9rem;
-                                            height:.3rem;
-                                        }
-                                    }
-                                    &+ul{
-                                        position:relative;
-                                        background: rgba(0, 75, 147, 0.1);
-                                        padding:4rem;
-                                        >li{
-                                            a{
-                                                display: block;
-                                                font-size:3rem;
-                                                color:#004b93;
-                                                text-align: left;
-                                                &:hover{
-                                                    &::before{
-                                                        display: none;
-                                                    }
-                                                }
-                                            }
-                                            &+li{
-                                                margin-top: 4rem;
-                                            }
-                                        }
-                                    }
-                                }
-                                &.active{
-                                    height: auto;
-                                    
-                                    >a{
-                                        background: $color-blue;
-                                        color:#ffffff;
-                                        i{
-                                            &::after{
-                                                display: none;
-                                            }
-                                            &::before{
-                                                background: #ffffff;
-                                            }
-                                        }
-                                        // &+ul{
-                                        //     >li{
-                                        //         a{
-                                        //             display: block;
-                                        //             font-size:3rem;
-                                        //             color:#004b93;
-                                        //             text-align: left;
-                                        //             &:hover{
-                                        //                 &::before{
-                                        //                     display: none;
-                                        //                 }
-                                        //             }
-                                        //         }
-                                        //         &+li{
-                                        //             margin-top: 4rem;
-                                        //         }
-                                        //     }
-                                        // }
-                                    }
-                                }
-                            }
-                        }
-                        .rela-site {
-                            margin:0;
-                            padding:5px 0;
-                            border-top:1px solid #dddddd;
-                            border-bottom:1px solid #dddddd;
-                            background:rgba(0, 75, 147, 0.1);
-                            button{
-                                flex:1;
-                                height:12rem;
-                                font-size:3rem;
-                                color:#5e5e5e;
-                                background:#ffffff;
-                                &+button{
-                                    border-left:1px solid #dddddd;
-                                }
-                            }
-                        }
-                    }
-                    .rela-site{
-                        display: flex !important;
-                    }
-                    
-                    
-                }
-            }
-        }
-    }
-    
-    .filebox{
-        flex:1;
-    }
-    
-}
-
-@media screen and(max-width:375px){
-    .header .gnb-box{
-        &.mobile.open .gnb > li > a{
-            font-size: 2.6rem;
-            &+ul{
-                >li{
-                    a{
-                        font-size:2rem;
-                    }
-                    &+li{
-                        margin-top:2rem;
-                    }
-                }
-            }
-        }
-    }
-}
 
